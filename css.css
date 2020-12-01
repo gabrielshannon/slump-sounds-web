@@ -1,0 +1,100 @@
+html,
+body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden
+}
+
+#container {
+    position: absolute;
+    top: 0px;
+    z-index: -9999;
+}
+
+#track1 {
+    float: right;
+    width: 15%;
+    min-width: 130px;
+    margin-right: 5px;
+    position: absolute;
+    top: 6px;
+    right: 5px;
+    color: black;
+}
+
+#track2 {
+    float: right;
+    width: 15%;
+    min-width: 130px;
+    margin-right: 5px;
+    position: absolute;
+    top: 36px;
+    right: 5px;
+    color: black;
+}
+
+#track3 {
+    float: right;
+    width: 15%;
+    min-width: 130px;
+    margin-right: 5px;
+    position: absolute;
+    top: 66px;
+    right: 5px;
+    color: black;
+}
+
+#track4 {
+    float: right;
+    width: 15%;
+    min-width: 130px;
+    margin-right: 5px;
+    position: absolute;
+    top: 96px;
+    right: 5px;
+    color: black;
+}
+
+#track5 {
+    float: right;
+    width: 15%;
+    min-width: 130px;
+    margin-right: 5px;
+    position: absolute;
+    top: 126px;
+    right: 5px;
+    color: black;
+}
+
+#track6 {
+    float: right;
+    width: 15%;
+    min-width: 130px;
+    margin-right: 5px;
+    position: absolute;
+    top: 156px;
+    right: 5px;
+    color: black;
+}
+
+#track7 {
+    float: right;
+    width: 15%;
+    min-width: 130px;
+    margin-right: 5px;
+    position: absolute;
+    top: 186px;
+    right: 5px;
+    color: black;
+}
+
+#track8 {
+    float: right;
+    width: 15%;
+    min-width: 130px;
+    margin-right: 5px;
+    position: absolute;
+    top: 216px;
+    right: 5px;
+    color: black;
+}

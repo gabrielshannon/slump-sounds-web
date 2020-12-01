@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from elated-shirley-a5af24.netlify.app/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Nov 2020 19:21:37 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<!-- /Added by HTTrack -->
+
+<head>
+    <title>world</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+</head>
+<link rel="icon" href="https://lh3.googleusercontent.com/proxy/qd7r20it4uBIkYxlnnk6-JhnZiSdT45f__5frUNtLstdtYQAdJPJVGGsKXVADT8l4YDJKR9a3YjTPC-9eqz3zUlgwh8ZZBs9" type="image/gif" sizes="16x16">
+
+<link rel="stylesheet" href="css.css">
+
+<body>
+    <script src="build/three.min.js"></script>
+    <!-- <script src="three.js-master/examples/js/loaders/OBJLoader.js"></script>
+    <script src="three.js-master/examples/js/controls/OrbitControls.js"></script> -->
+    <!-- Wikplayer https://www.wikplayer.com -->
+    <!-- SCM Music Player https://www.scmplayer.net -->
+    <!-- <script type="text/javascript" src="https://www.scmplayer.net/script.js" data-config="{'skin':'https://static.tumblr.com/tdxu6li/aNLqknz99/newcss.css','volume':50,'autoplay':true,'shuffle':false,'repeat':1,'placement':'top','showplaylist':false,'playlist':'https://soundcloud.com/slumpsounds/sets/mixes-2017-2020'}"></script> -->
+    <!-- SCM Music Player script end -->
+
+    <!-- <link href="css/siren.css" title="compact" rel="stylesheet" type="text/css"> -->
+
+
+    <!-- <div class="footer">
+        </a>&copy; <a href="http://www.sirenlondon.co.uk">SIREN |</a> As of 2016<br>
+        <a href="https://www.facebook.com/sirenldn/"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+        <a href="https://twitter.com/sirenldn?lang=en"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.instagram.com/sirenldn/?hl=en"><i class="fa fa-instagram"></i></a>
+        <a href="https://soundcloud.com/sirenldn"><i class="fa fa-soundcloud"></i></a>
+        <a href="https://www.mixcloud.com/sirenldn/"><i class="fa fa-mixcloud"></i></a>
+    </div> -->
+    <!-- Closed footer -->
+
+    <div id="track1">
+        <iframe src="https://w.soundcloud.com/player/?url=https://soundcloud.com/kindred_ldn/slump-sounds-29-9-20?in=slumpsounds/sets/mixes-2017-2020&amp;color=000000&amp;inverse=false&amp;auto_play=true&amp;show_user=true" width="100%" height="20" frameborder="no"
+            scrolling="no"></iframe>
+    </div>
+
+
+    <div id="track2">
+        <iframe src="https://w.soundcloud.com/player/?url=https://soundcloud.com/kindred_ldn/slump-sounds-29-9-20?in=slumpsounds/sets/mixes-2017-2020&amp;color=000000&amp;inverse=false&amp;auto_play=true&amp;show_user=true" width="100%" height="20" frameborder="no"
+            scrolling="no"></iframe>
+    </div>
+
+    <div id="track3">
+        <iframe src="https://w.soundcloud.com/player/?url=https://soundcloud.com/kindred_ldn/slump-sounds-1-9-20?in=slumpsounds/sets/mixes-2017-2020&amp;color=000000&amp;inverse=false&amp;auto_play=true&amp;show_user=true" width="100%" height="20" frameborder="no"
+            scrolling="no"></iframe>
+    </div>
+
+    <div id="track4">
+        <iframe src="https://w.soundcloud.com/player/?url=https://soundcloud.com/kindred_ldn/slump-sounds-4820?in=slumpsounds/sets/mixes-2017-2020&amp;color=000000&amp;inverse=false&amp;auto_play=true&amp;show_user=true" width="100%" height="20" frameborder="no"
+            scrolling="no"></iframe>
+    </div>
+
+    <div id="track5">
+        <iframe src="https://w.soundcloud.com/player/?url=https://soundcloud.com/vandelaylol/rotation-w-slump-sounds-190820?in=slumpsounds/sets/mixes-2017-2020&amp;color=000000&amp;inverse=false&amp;auto_play=true&amp;show_user=true" width="100%" height="20"
+            frameborder="no" scrolling="no"></iframe>
+    </div>
+
+    <div id="track6">
+        <iframe src="https://w.soundcloud.com/player/?url=https://soundcloud.com/kmah-radio/slump-sounds-presents-slump-in-solidarity-10062020?in=slumpsounds/sets/mixes-2017-2020&amp;color=000000&amp;inverse=false&amp;auto_play=true&amp;show_user=true" width="100%"
+            height="20" frameborder="no" scrolling="no"></iframe>
+    </div>
+
+    <div id="track7">
+        <iframe src="https://w.soundcloud.com/player/?url=https://soundcloud.com/kmah-radio/slump-in-solidarity-w-lmi-08072020?in=slumpsounds/sets/mixes-2017-2020&amp;color=000000&amp;inverse=false&amp;auto_play=true&amp;show_user=true" width="100%" height="20"
+            frameborder="no" scrolling="no"></iframe>
+    </div>
+
+    <div id="track8">
+        <iframe src="https://w.soundcloud.com/player/?url=https://soundcloud.com/kmah-radio/slump-sound-presents-2-hour-special?in=slumpsounds/sets/mixes-2017-2020&amp;color=000000&amp;inverse=false&amp;auto_play=true&amp;show_user=true" width="100%" height="20"
+            frameborder="no" scrolling="no"></iframe>
+    </div>
+
+    <div id="container">
+
+        <script>
+            var camera, scene, renderer;
+            var isUserInteracting = false,
+                lon = 0,
+                lat = 0,
+                phi = 0,
+                theta = 0,
+                distance = 500,
+                onPointerDownPointerX = 0,
+                onPointerDownPointerY = 0,
+                onPointerDownLon = 0,
+                onPointerDownLat = 0;
+
+            var cube;
+
+            init();
+            animate();
+
+            function init() {
+
+                /// 3D BACKGROUND CODE 
+                var container, mesh;
+                container = document.getElementById('container');
+                camera = new THREE.PerspectiveCamera(80, window.innerWidth / window.innerHeight, 1, 2000);
+                scene = new THREE.Scene();
+                var geometry = new THREE.SphereBufferGeometry(500, 60, 40).toNonIndexed();
+                // invert the geometry on the x-axis so that all of the faces point inward
+                geometry.scale(-1, 1, 1);
+                // Remap UVs
+                var normals = geometry.attributes.normal.array;
+                var uvs = geometry.attributes.uv.array;
+                for (var i = 0, l = normals.length / 3; i < l; i++) {
+                    var x = normals[i * 3 + 0];
+                    var y = normals[i * 3 + 1];
+                    var z = normals[i * 3 + 2];
+                    if (i < l / 2) {
+                        var correction = (x == 0 && z == 0) ? 1 : (Math.acos(y) / Math.sqrt(x * x + z * z)) * (2 / Math.PI);
+                        uvs[i * 2 + 0] = x * (404 / 1920) * correction + (447 / 1920);
+                        uvs[i * 2 + 1] = z * (404 / 1080) * correction + (582 / 1080);
+                    } else {
+                        var correction = (x == 0 && z == 0) ? 1 : (Math.acos(-y) / Math.sqrt(x * x + z * z)) * (2 / Math.PI);
+                        uvs[i * 2 + 0] = -x * (404 / 1920) * correction + (1460 / 1920);
+                        uvs[i * 2 + 1] = z * (404 / 1080) * correction + (582 / 1080);
+                    }
+                }
+                geometry.rotateY(-Math.PI / 2);
+                geometry.rotateZ(-Math.PI / 2);
+                // geometry.rotateY(-Math.PI / 2);
+                //
+                var texture = new THREE.TextureLoader().load('images/newpic.jpg');
+                texture.minFilter = THREE.LinearFilter;
+                texture.format = THREE.RGBFormat;
+                var material = new THREE.MeshBasicMaterial({
+                    map: texture
+                });
+                mesh = new THREE.Mesh(geometry, material);
+                scene.add(mesh);
+                renderer = new THREE.WebGLRenderer();
+                renderer.setPixelRatio(window.devicePixelRatio);
+                renderer.setSize(window.innerWidth, window.innerHeight);
+                container.appendChild(renderer.domElement);
+                document.addEventListener('mousedown', onDocumentMouseDown, false);
+                document.addEventListener('mousemove', onDocumentMouseMove, false);
+                document.addEventListener('mouseup', onDocumentMouseUp, false);
+                // document.addEventListener('wheel', onDocumentMouseWheel, false);
+                //
+                window.addEventListener('resize', onWindowResize, false);
+
+                /// CUBE / OBJECT CODE
+
+                var cubeGeometry = new THREE.BoxBufferGeometry(1, 1, 1);
+                var cubeMaterial = new THREE.MeshLambertMaterial({
+                    color: 'rgb(255,0,0)',
+                    emissive: 0x200000
+                });
+                var geometry = new THREE.BoxGeometry(100, 100, 100);
+                var material = new THREE.MeshBasicMaterial({
+                    color: 0x00ff00
+                });
+                var cube = new THREE.Mesh(geometry, material);
+                //  scene.add(cube);
+
+            }
+
+            function onWindowResize() {
+                camera.aspect = window.innerWidth / window.innerHeight;
+                camera.updateProjectionMatrix();
+                renderer.setSize(window.innerWidth, window.innerHeight);
+            }
+
+            function onDocumentMouseDown(event) {
+                event.preventDefault();
+                isUserInteracting = true;
+                onPointerDownPointerX = event.clientX;
+                onPointerDownPointerY = event.clientY;
+                onPointerDownLon = lon;
+                onPointerDownLat = lat;
+            }
+
+            function onDocumentMouseMove(event) {
+                if (isUserInteracting === true) {
+                    lon = (onPointerDownPointerX - event.clientX) * 0.1 + onPointerDownLon;
+                    lat = (onPointerDownPointerY - event.clientY) * 0.1 + onPointerDownLat;
+                }
+            }
+
+            function onDocumentMouseUp() {
+                isUserInteracting = false;
+            }
+
+            // function onDocumentMouseWheel(event) {
+            //     distance += event.deltaY * 0.10;
+            //     distance = THREE.Math.clamp(distance, 400, 1000);
+            // }
+
+            function animate() {
+                requestAnimationFrame(animate);
+                update();
+            }
+
+            function update() {
+                if (isUserInteracting === false) {
+                    lon += 0.1;
+                }
+
+                lat = Math.max(-85, Math.min(85, lat));
+                phi = THREE.Math.degToRad(90 - lat);
+                theta = THREE.Math.degToRad(lon - 180);
+                camera.position.x = distance * Math.sin(phi) * Math.cos(theta);
+                camera.position.y = distance * Math.cos(phi);
+                camera.position.z = distance * Math.sin(phi) * Math.sin(theta);
+                camera.lookAt(scene.position);
+                renderer.render(scene, camera);
+            }
+        </script>
+
+    </div>
+</body>
+
+
+<!-- Mirrored from elated-shirley-a5af24.netlify.app/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Nov 2020 19:21:38 GMT -->
+
+</html>
