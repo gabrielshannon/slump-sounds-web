@@ -13,6 +13,13 @@ p {
     margin: 0 10px;
 }
 
+#myIm {
+    position: absolute;
+    z-index: 50;
+    right: 85%;
+    top: 2%;
+}
+
 #mygif {
     width: 150px;
     height: 101px;
@@ -29,8 +36,8 @@ p {
     margin-right: 150px;
     margin-top: 10;
     position: fixed;
-    top: 50px;
-    right: 5px;
+    top: 15%;
+    right: 70%;
     color: black;
     z-index: 50;
 }
@@ -63,17 +70,6 @@ p {
     margin-right: 5px;
     position: absolute;
     top: 6px;
-    right: 5px;
-    color: black;
-}
-
-#track2 {
-    float: right;
-    width: 15%;
-    min-width: 130px;
-    margin-right: 5px;
-    position: absolute;
-    top: 36px;
     right: 5px;
     color: black;
 }
