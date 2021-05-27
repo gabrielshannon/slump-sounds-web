@@ -83,7 +83,7 @@ function Scene() {
 		geometry.rotateZ(-Math.PI / 2);
 		// geometry.rotateY(-Math.PI / 2);
 		//
-		const texture = new THREE.TextureLoader().load('./images/newpic2.jpg');
+		const texture = new THREE.TextureLoader().load('/newpic2.jpg');
 		texture.minFilter = THREE.LinearFilter;
 		texture.format = THREE.RGBFormat;
 		const material = new THREE.MeshBasicMaterial({
