@@ -1,0 +1,150 @@
+/* NON-GRID FALLBACK CODE */
+
+@media(grid:0){
+  /* MOBILE */
+
+  @media (min-width: 8px) {
+    /* BROWSER */
+
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+    }
+
+    .outer {
+  pointer-events: none;
+    }
+
+   
+    .grid-container {
+      background-color: aliceblue;
+      height: 925px;
+      width: 600px;
+      display: grid;
+      grid-template: 700px 200px 25px / 100px 400px 100px;
+       /* grid-template: 7fr 2fr 0.25fr / 1fr 4fr 1fr; */
+      gap: 50px;
+      grid-template-areas:
+        "LT header RT"
+        "LM content RM"
+        "LB footer RB";
+      z-index: 1;
+    
+    }
+
+    .background {
+      position: absolute;
+      /* background-color: blue; */
+      /* grid-row: 1 / 4;
+      grid-column: 1 / 4; */
+      z-index: -1;
+      /* pointer-events: visible 
+      position: static; */
+    }
+
+    .LT {
+      /* background-color: aliceblue; */
+        
+      border: 1px solid red;
+      grid-area: LT;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .header {
+      /* background-color: rgb(78, 172, 255); */
+      border: 1px solid red;
+      grid-area: header;
+      grid-template: 0.1fr 1fr 0.3fr / 1fr;
+      display: grid;
+    }
+
+    .header-top {
+        border: 1px solid red;
+      /* background-color: rgb(161, 15, 180); */
+    }
+
+    .header-mid {
+        border: 1px solid red;
+      /* background-color: rgb(15, 180, 111); */
+    }
+
+    .header-bottom {
+        border: 1px solid red;
+      /* background-color: rgb(180, 155, 15); */
+    }
+
+
+    .RT {
+      /* background-color: aliceblue; */
+      border: 1px solid red;
+      grid-area: RT;
+    }
+
+    .LM {
+      /* background-color: rgb(222, 253, 85); */
+        border: 1px solid red;
+      grid-area: LM;
+    }
+
+    .content {
+      /* background-color: rgb(104, 220, 255); */
+        border: 1px solid red;
+      grid-area: content;
+      grid-template: 0.15fr  1fr / 1fr 1fr 1fr;
+      display: grid;
+    }
+
+    
+    .content-title-left {
+        border: 1px solid red;
+      /* background-color: rgb(104, 255, 112); */
+    }
+
+     .content-title-mid {
+         border: 1px solid red;
+      /* background-color: rgb(240, 255, 104); */
+    }
+
+     .content-title-right {
+         border: 1px solid red;
+      /* background-color: rgb(255, 197, 104); */
+    }
+
+     .content-main {
+         border: 1px solid red;
+      /* background-color: rgb(255, 104, 104); */
+      grid-column: 1 / -1;
+
+    }
+
+    
+    .RM {
+      /* background-color: rgb(222, 253, 85); */
+      grid-area: RM;
+    }
+
+    .nested {
+      display: grid;
+      grid-area: content;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 10px;
+
+    }
+
+    .nested p {
+     /* border: 1px solid #fff; */
+     padding: 20px;
+      
+    }
+
+    .footer {
+      /* background-color: rgb(100, 247, 64); */
+      grid-area: footer;
+    }
+  
+  }
+}

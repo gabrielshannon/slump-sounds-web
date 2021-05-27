@@ -1,0 +1,125 @@
+@font-face {
+    font-family: 'Grotesk-Remix-reg';
+    src: url('fonts/39DD9F_0_0.woff') format('woff');
+    src: url('fonts/39DD9F_0_0.ttf') format('truetype'), url('fonts/39DD9F_0_0.woff') format('woff'), url('fonts/39DD9F_0_0.woff2') format('eot'), url('fonts/39DD9F_0_0.ttf') format('eot');
+    font-style: normal;
+}
+
+body {
+    font-family: 'Grotesk-Remix-reg', sans-serif;
+    font-style: normal;
+    color:  #cfcfcf;
+    font-size: 12px
+}
+
+  html body{
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: 0;
+  }
+
+/* NON-GRID FALLBACK CODE */
+
+@media(grid:0){
+  /* MOBILE */
+
+  @media (min-width: 8px) {
+    /* BROWSER */
+
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+    }
+   
+    .container {
+      height: 100vh;
+      width: 100vw;
+      display: grid;
+      /* grid-template: 700px 200px 25px / 100px 400px 100px; */
+      grid-template: 7fr 0.25fr / 1fr 4fr 1fr;
+      gap: 10px;
+      grid-template-areas:
+        "LT nested_content RT"
+        "LB footer RB";
+      z-index: 1;   
+    }
+
+    .LT {
+      grid-area: LT;
+    }
+
+    .RT {
+      grid-area: RT;
+    }
+
+    .nested_content{
+      /* grid-area: nested_content; */
+      grid-template: 1fr 0.5fr / 1fr;
+      display: grid; 
+    }
+
+    .RM {
+      /* background-color: rgb(222, 253, 85); */
+      grid-area: RM;
+    }
+
+    .footer {
+      /* background-color: rgb(100, 247, 64); */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #ffffff;
+      grid-area: footer;
+      margin: 12px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-style: normal;
+      font-size: 12px;
+
+    }
+
+    .headerBg {
+      z-index: -1;
+    }
+
+    .flame {
+      position: absolute;
+      top: 50%;
+      right: 20%;
+    }
+
+     .title {
+      position: relative;
+      left: 36%;
+      top: -20px;
+    }
+
+      .center {
+      position: absolute;
+      left: 45%;
+      top: 35%;
+      z-index: 1;
+    }
+
+    .snake {
+      position: absolute;
+      left: 45%;
+      top: 35%;
+      z-index: 100;
+    }
+
+    .logo{
+       margin-bottom: 3px;
+    }
+
+    .tape{
+      position: relative;
+       top: 80%;
+       left: 25%;
+    }
+  
+  }
+}
