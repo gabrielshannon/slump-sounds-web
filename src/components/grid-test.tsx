@@ -6,7 +6,7 @@ import AudioPlayer from 'react-h5-audio-player';
 import 'react-h5-audio-player/lib/styles.css';
 
 import PlayerApp from './PlayerApp.js';
-import bgIm from'./images/Screenshot2.png';
+import bgIm from'./images/screenshot2.png';
 import flame from'./images/400.gif';
 import title from'./images/mytitle.png';
 import center from'./images/000.jpg';
