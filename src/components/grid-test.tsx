@@ -8,14 +8,9 @@ import 'react-h5-audio-player/lib/styles.css';
 import PlayerApp from './PlayerApp.js';
 import bgIm from'./images/screenshot2.png';
 import flame from'./images/400.gif';
-import title from'./images/mytitle.png';
-import center from'./images/000.jpg';
 import logo from'./images/myasset.svg';
-import snake from'./images/snake.gif';
 import snake2 from'./images/coloursnake.gif';
 import tape from'./images/tape.png';
-import slmp from'./images/slmp.png';
-import anime from'./images/anime.gif';
 
 
 import { Container, Row, Col } from 'react-bootstrap';
