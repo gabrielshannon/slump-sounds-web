@@ -4,6 +4,8 @@ import * as THREE from 'three'
 import {OrbitControls} from "three/examples/jsm/controls/OrbitControls";
 import './App.css';
 import {Grid} from "./grid-test.tsx";
+import newpic from'./images/newpic2.jpg';
+
 
 
 // @ts-ignore
@@ -83,7 +85,7 @@ function Scene() {
 		geometry.rotateZ(-Math.PI / 2);
 		// geometry.rotateY(-Math.PI / 2);
 		//
-		const texture = new THREE.TextureLoader().load('/images/newpic2.jpg');
+		const texture = new THREE.TextureLoader().load(newpic);
 		texture.minFilter = THREE.LinearFilter;
 		texture.format = THREE.RGBFormat;
 		const material = new THREE.MeshBasicMaterial({
