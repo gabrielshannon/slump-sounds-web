@@ -1,0 +1,108 @@
+  const accordionItems = [
+    {
+      id: "Radio:",
+      items: [
+        {
+          item: "KINDRED — SLUMP SOUNDS // LATITUDE FESTIVAL 22.7.21",
+          data: "https://www.youtube.com/embed/zxBWis3Jixw?autoplay=0",
+        },
+
+        {
+          item: "KINDRED — SLUMP SOUNDS 3.8.21",
+          data: "https://www.youtube.com/watch?v=iI9Zjg0i18M",
+        },
+
+        {
+          item: "KINDRED — SLUMP SOUNDS 22.6.21",
+          data: "https://www.youtube.com/embed/6jKAixyOUno",
+        },
+
+        {
+          item: "KINDRED — SLUMP SOUNDS 18.5.21",
+          data: 0,
+        },
+
+        {
+          item: "KINDRED — SLUMP SOUNDS 20.4.21",
+          data: "https://www.youtube.com/embed/HWW8NQEV2fg?autoplay=0",
+        },
+
+        {
+          item: "KINDRED — SLUMP SOUNDS 23.2.21",
+          data: 0,
+        },
+
+        {
+          item: "KINDRED — SLUMP SOUNDS 3.11.20",
+          data: "https://www.youtube.com/embed/0IWsJWxv7Ok",
+        },
+
+        {
+          item: "KINDRED — SLUMP SOUNDS 29.9.20",
+          data: "https://www.youtube.com/embed/9w61G-KfKWI",
+        },
+
+        { item: "KINDRED — SLUMP SOUNDS 1.9.20", 
+          data: 0 
+        },
+
+        {
+          item: "Slump Sounds Presents: PROSPA (Guest Mix on KMAH Radio)",
+          data: 0,
+        },
+
+        {
+          item: "Vandelay Radio — Rotation w/ Slump Sounds (19/08/20)",
+          data: 0,
+        },
+
+        {
+          item: "KINDRED — SLUMP SOUNDS 4.8.20",
+          data: "https://www.youtube.com/embed/8tClTQ_GWV8",
+        },
+
+        {
+          item:
+          "KMAH Radio — Slump Sounds Presents: Slump In Solidarity 10.06.2020",
+          data: 0,
+        },
+
+        {
+          item: "KMAH Radio — Slump Sounds Presents: 2 Hour Special 13.05.2020",
+          data: 0,
+        },
+
+        {
+          item: "Fae — Kmah / Slump Sounds / 14/3/19",
+          data: 0,
+        },
+
+        {
+          item: "Big Tunes & That w/ Happa and Slump Sounds (09.03.2017)",
+          data: 0,
+        },
+      ],
+    },
+
+        {
+        id: "Releases:",
+        items: [
+            { item: "Job Type - Numbers Vol​.​3", 
+            data: 0, 
+            },
+
+            { item: "Lydios - SolidMixtape1", 
+            data: 0,
+            },
+
+            { item: "Baccy Beard - nearest@exomoon", 
+            data: 0, 
+            },
+        ],
+        },
+
+        {
+        id: "Contact",
+        items: [{ item: "", data: track1, type: "" }],
+    },
+  ]

@@ -57,7 +57,7 @@ body {
 
     .nested_content{
       /* grid-area: nested_content; */
-      grid-template: 1fr 0.5fr / 1fr;
+      grid-template: 1fr 0.35fr / 1fr;
       display: grid; 
     }
 
@@ -93,8 +93,8 @@ body {
 
      .title {
       position: relative;
-      left: 36%;
-      top: -20px;
+      left: 42%;
+      top: 10px;
     }
 
       .center {
@@ -120,6 +120,18 @@ body {
        top: 80%;
        left: 25%;
     }
+
+    .menu {
+    /* width: 80px; */
+       position: relative;
+    left: 25%;
+    font-family: 'Grotesk-Remix-reg', sans-serif;
+    font-style: bold;
+    background: rgb(230, 230, 230);
+    /* border: 0.5px solid; */
+    /* width: 150%; */
+    
+}
   
   }
 }

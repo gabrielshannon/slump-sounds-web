@@ -36,6 +36,12 @@ function Scene() {
 		onPointerDownLat = lat;
 	}, []);
 
+		const onWindowResize = useCallback((event) => {
+   		camera.aspect = window.innerWidth / window.innerHeight;
+    	camera.updateProjectionMatrix();
+    	renderer.setSize(window.innerWidth, window.innerHeight);
+	}, []);
+
 	const onDocumentMouseMove = useCallback((event) => {
 		if (isUserInteracting) {
 			lon = (onPointerDownPointerX - event.clientX) * 0.1 + onPointerDownLon;
@@ -100,6 +106,8 @@ function Scene() {
 		document.addEventListener('mousedown', onDocumentMouseDown, false);
 		document.addEventListener('mousemove', onDocumentMouseMove, false);
 		document.addEventListener('mouseup', onDocumentMouseUp, false);
+
+		window.addEventListener('resize', onWindowResize, false);
 		// document.addEventListener('wheel', onDocumentMouseWheel, false);
 
 		// container.addEventListener('mousedown', onDocumentMouseDown, false);
@@ -123,6 +131,8 @@ function Scene() {
 		// var cube = new THREE.Mesh(geometry2, material2);
 		//  scene.add(cube);
 	}, []);
+
+	
 
 	const update = useCallback(() => {
 		if (!isUserInteracting) {

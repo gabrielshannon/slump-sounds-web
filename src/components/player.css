@@ -52,7 +52,9 @@
       border: 1px solid #cfcfcf;
       margin-top: 5px;
       grid-column: 1 / -1;
-
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
 
@@ -98,7 +100,7 @@
   
 }
 
-.
+
 
 .accordion__content .active{
 
@@ -137,6 +139,7 @@
   transition: max-height 1.5s ease-out;
   bottom: 0px;
   width: 100%;
+
 }
 
 /* .accordion__content {
@@ -164,6 +167,7 @@
 .accordion__text {
   /* font-family: "Open Sans", sans-serif; */
   font-weight: 400;
+  /* padding-top: 15px; */
   /* font-size: 14px; */
   /* padding: 18px; */
 }
@@ -282,4 +286,9 @@ li:hover {
 
 .rhap_container svg {
     color: rgba(182, 182, 182, 0.8);
+}
+
+.trackTitle {
+  font-size: 15px !important;
+  padding: 10px;
 }
