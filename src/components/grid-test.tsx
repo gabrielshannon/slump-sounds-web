@@ -8,10 +8,11 @@ import "react-h5-audio-player/lib/styles.css"
 import PlayerApp from "./PlayerApp.js"
 import bgIm from "./images/screenshot2.png"
 import flame from "./images/400.gif"
-import logo from "./images/myasset.svg"
 import snake2 from "./images/coloursnake.gif"
 import tape from "./images/tape.png"
-import tempLOGO from "./images/redlogo.svg"
+import logo from "./images/myasset.svg"
+
+import tempLOGO from "./images/nuLOG2.png"
 
 import { Container, Row, Col } from "react-bootstrap"
 
@@ -20,13 +21,12 @@ export function Grid() {
     <div style={{}}>
       <div className="container">
         <div className="LT">
-          {/* <img className="anime" src={anime} width="100%"/> */}
+          {/* <img className="anime" src={anime} width="15%"/> */}
         </div>
 
         <div className="nested_content">
           <div className="nested_header">
-     
-            {/* <img className="title" src={tempLOGO} width="35%" /> */}
+            <img className="title" src={tempLOGO} width="15%" />
             <img className="flame" src={flame} width="40px" />
             <img className="headerBg" src={bgIm} width="90%" />
             <img className="center" src={snake2} width="10%" />
@@ -42,7 +42,7 @@ export function Grid() {
         </div>
 
         <div className="footer">
-          <img className="logo" src={logo} width="100px" />
+          <img className="logo" src={logo} width="110px" />
           slump sounds 2021 : all rights reserved
         </div>
       </div>

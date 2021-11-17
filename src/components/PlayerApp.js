@@ -1,72 +1,204 @@
 import React, { useState, useRef, ReactNode } from "react"
 import "react-h5-audio-player/lib/styles.css"
 import "./player.css"
-import Link from "gatsby-link"
 import AudioPlayer from "react-h5-audio-player"
 import "./custom.css"
-
-import track1 from "./audio/__0012.wav"
-import track2 from "./audio/brek.wav"
-import track3 from "./audio/COLEMAN.wav"
-
-import track4 from "./audio/drums_dddd.wav"
-import track5 from "./audio/gee_final.wav"
-import track6 from "./audio/Limmytrax_1.wav"
-
-import track7 from "./audio/mooore.wav"
-import track8 from "./audio/MZK.wav"
-import track9 from "./audio/New.wav"
-
-import numbers from "./images/jobtype-numbers.jpg"
-import numbers2 from "./images/numbers2.mp4"
-
-import lydios from "./images/lydios.jpg"
-
 import "./player.css"
-// import playPause from "./images/Asset1.svg"
-
 import { ReactNode as playPause } from "./images/Asset1.svg"
 import Modal from "./Modal"
 
+import { graphql, useStaticQuery } from "gatsby"
+
 const PlayerApp = () => {
+  const slumpData = useStaticQuery(graphql`
+    query slumpQuery {
+      allWpMediaItem {
+        edges {
+          node {
+            mediaItemUrl
+            title
+          }
+        }
+      }
+    }
+  `)
+
   const accordionItems = [
     {
-      id: "Releases:",
+      id: "Radio / Campaigns:",
       items: [
         {
-          item: "INDEX 0 KINDRED — SLUMP SOUNDS 3.8.21",
-          data: "https://www.youtube.com/embed/HWW8NQEV2fg?autoplay=0",
-          audio: ""
+          item: "SLUMP SOUNDS 12.05.21 // KINDRED RADIO",
+          data: "https://www.youtube.com/embed/MGVzGE_oYTI?autoplay=0",
+          audio: null,
         },
         {
-          item: "INDEX 1 KINDRED — SLUMP SOUNDS // LATITUDE FESTIVAL 22.7.21",
+          item: "SLUMP SOUNDS 07.09.21 // KINDRED RADIO",
+          data: "https://www.youtube.com/embed/qW4CQNdpza0?autoplay=0",
+        },
+        {
+          item: "SLUMP SOUNDS 03.08.21 // KINDRED RADIO",
+          data: "https://www.youtube.com/embed/iI9Zjg0i18M?autoplay=0",
+        },
+        {
+          item: "SLUMP SOUNDS // LATITUDE FESTIVAL",
           data: "https://www.youtube.com/embed/zxBWis3Jixw?autoplay=0",
         },
         {
-          item: "INDEX 2 KINDRED — SLUMP SOUNDS 22.6.21",
-          data: "https://www.youtube.com/embed/qW4CQNdpza0?autoplay=0",
+          item: "SLUMP SOUNDS 22.06.21 // KINDRED RADIO",
+          data: "https://www.youtube.com/embed/6jKAixyOUno?autoplay=0",
         },
-              {
-          item: "INDEX 2 KINDRED — SLUMP SOUNDS 22.6.21",
-          data: "https://www.youtube.com/embed/qW4CQNdpza0?autoplay=0",
+        {
+          item: "SLUMP SOUNDS 20.04.21 // KINDRED RADIO",
+          data: "https://www.youtube.com/embed/HWW8NQEV2fg?autoplay=0",
+        },
+        {
+          item: "SLUMP SOUNDS 03.11.20 // KINDRED RADIO",
+          data: "https://www.youtube.com/embed/0IWsJWxv7Ok?autoplay=0",
+        },
+        {
+          item: "SLUMP SOUNDS 29.09.20 // KINDRED RADIO",
+          data: "https://www.youtube.com/embed/9w61G-KfKWI?autoplay=0",
+        },
+
+        {
+          item: "SLUMP SOUNDS 4.8.20 // KINDRED RADIO",
+          data: "https://www.youtube.com/embed/8tClTQ_GWV8?autoplay=0",
+        },
+
+        {
+          item:
+            "Slump Sounds Presents... Valentines Special w_ Curbside 14.02.2019 // Kmah Radio",
+          data: null,
+          audio: slumpData.allWpMediaItem.edges[2].node.mediaItemUrl,
+        },
+
+        {
+          item:
+            "Rotation w Noah Tucker - Slump Sounds 19.08.20 // Vandelay Radio",
+          data: null,
+          audio: slumpData.allWpMediaItem.edges[3].node.mediaItemUrl,
+        },
+
+        {
+          item:
+            "Slump Sounds Presents... 2 HOUR SPECIAL VOL.1 05.07.2019 // Kmah Radio",
+          data: null,
+          audio: slumpData.allWpMediaItem.edges[4].node.mediaItemUrl,
+        },
+
+        {
+          item:
+            "Slump Sounds Presents... Baccy Beard b2b Vesarchie 11.04.19 // Kmah Radio",
+          data: null,
+          audio: slumpData.allWpMediaItem.edges[5].node.mediaItemUrl,
+        },
+
+        {
+          item: "Slump Sounds Presents... Holloway 05.06.2019 // Kmah Radio ",
+          data: null,
+          audio: slumpData.allWpMediaItem.edges[7].node.mediaItemUrl,
+        },
+
+        {
+          item: "Slump Sounds Presents... FAE 14.03.2019 // Kmah Radio",
+          data: null,
+          audio: slumpData.allWpMediaItem.edges[6].node.mediaItemUrl,
+        },
+
+        {
+          item: "Slump Sounds Presents... PROSPA 29_08_2019 // Kmah Radio",
+          data: null,
+          audio: slumpData.allWpMediaItem.edges[8].node.mediaItemUrl,
+        },
+
+        {
+          item: "Job Type - Summer Slam tape",
+          data: null,
+          audio: slumpData.allWpMediaItem.edges[9].node.mediaItemUrl,
         },
       ],
     },
 
     {
-      id: "Radio:",
+      id: "Releases:",
       items: [
-        { item: "JOB TYPE", data: numbers, audio: track6, },
-        { item: "LYDIOS", data: lydios, audio: track1 },
-        { item: "MORE", data: "", audio: track3},
+        {
+          item: "Job Type - Numbers Vol.3",
+          data: slumpData.allWpMediaItem.edges[24].node.mediaItemUrl,
+          audio: slumpData.allWpMediaItem.edges[22].node.mediaItemUrl,
+        },
+
+        {
+          item: "Job Type - Numbers Vol.2",
+          data: slumpData.allWpMediaItem.edges[24].node.mediaItemUrl,
+          audio: slumpData.allWpMediaItem.edges[25].node.mediaItemUrl,
+        },
+
+        {
+          item: "baccy bear - 4head",
+          data: slumpData.allWpMediaItem.edges[11].node.mediaItemUrl,
+          audio: slumpData.allWpMediaItem.edges[13].node.mediaItemUrl,
+        },
+
+        {
+          item: "baccy bear - Kov",
+          data: slumpData.allWpMediaItem.edges[11].node.mediaItemUrl,
+          audio: slumpData.allWpMediaItem.edges[12].node.mediaItemUrl,
+        },
+
+        {
+          item: "baccy bear - Unfolded",
+          data: slumpData.allWpMediaItem.edges[11].node.mediaItemUrl,
+          audio: slumpData.allWpMediaItem.edges[10].node.mediaItemUrl,
+        },
+
+        {
+          item: "baccy bear - nearest@exomoon",
+          data: slumpData.allWpMediaItem.edges[14].node.mediaItemUrl,
+          audio: slumpData.allWpMediaItem.edges[15].node.mediaItemUrl,
+        },
+
+        {
+          item: "Lydios - LOCKDOWN IN ELLESS VOL. 1",
+          data: null,
+          audio: slumpData.allWpMediaItem.edges[18].node.mediaItemUrl,
+        },
+
+        {
+          item: "Lydios - LOCKDOWN IN ELLESS VOL. 2",
+          data: null,
+          audio: slumpData.allWpMediaItem.edges[17].node.mediaItemUrl,
+        },
+
+        {
+          item: "SLUMP - Production Tape 1",
+          data: slumpData.allWpMediaItem.edges[15].node.mediaItemUrl,
+          audio: slumpData.allWpMediaItem.edges[19].node.mediaItemUrl,
+        },
+        {
+          item: "Lydios - LS17",
+          data: null,
+          audio: slumpData.allWpMediaItem.edges[20].node.mediaItemUrl,
+        },
+
+        {
+          item: "Lydios - LS22",
+          data: null,
+          audio: slumpData.allWpMediaItem.edges[0].node.mediaItemUrl,
+        },
+
+        {
+          item: "Lydios - SOLIDMIXTAPE1",
+          data: slumpData.allWpMediaItem.edges[21].node.mediaItemUrl,
+          audio: slumpData.allWpMediaItem.edges[23].node.mediaItemUrl,
+        },
       ],
     },
 
     {
       id: "Contact:",
-      items: [
-        { item: "", data: "" },
-      ],
+      items: [{ item: "", data: "" }],
     },
   ]
 
@@ -76,22 +208,8 @@ const PlayerApp = () => {
   const [activeSet, setActiveSet] = useState(0)
   const [isOpen, setIsOpen] = useState(false)
 
-
-  // const BUTTON_WRAPPER_STYLES = {
-  //   position: "relative",
-  //   zIndex: 1,
-  // }
-
-  // const OTHER_CONTENT_STYLES = {
-  //   position: "relative",
-  //   zIndex: 2,
-  //   backgroundColor: "red",
-  //   padding: "10px",
-  // }
-
   function setIndex(p, index) {
-     console.log(p.id)
-    // setActiveItem(activeItem === p.id ? "" : p.id)
+    console.log(p.id)
     setActiveItem(activeItem === p.id ? "" : p.id)
     setActiveSet(index)
     setActiveTrack(0)
@@ -103,7 +221,6 @@ const PlayerApp = () => {
     setIsOpen(true)
   }
 
-
   return (
     <div className="content">
       <Modal
@@ -113,7 +230,7 @@ const PlayerApp = () => {
       >
         {accordionItems[activeSet].items[activeTrack].data}
       </Modal>
-      {/* {console.log(activeString)} */}
+      {/* {console.log(slumpData.allWpMediaItem.edges[3].node.mediaItemUrl)}; */}
       {accordionItems.map((p, index) => {
         return (
           <div className="content-list">
@@ -121,14 +238,15 @@ const PlayerApp = () => {
               ref={content}
               style={{ maxHeight: `${activeItem === p.id ? "60px" : "0px"}` }}
               className={
-                "accordion__content " + {p} + (activeItem === p.id ? "active" : "")
+                "accordion__content " +
+                { p } +
+                (activeItem === p.id ? "active" : "")
               }
             >
               <div className="accordion__text">
                 <ul>
                   {p.items.map((trackElem, trackIndex) => (
                     <li onClick={() => ChangeData(trackIndex, index)}>
-                      {/* {console.log(setIsOpen)} */}
                       {trackElem.item}
                     </li>
                   ))}
@@ -147,9 +265,7 @@ const PlayerApp = () => {
                 className={`accordion ` + (activeItem === p.id ? "active" : "")}
                 onClick={() => {
                   setIndex(p, index)
-                  // setActiveItem(activeItem === p.id ? "" : p.id)
                   {
-                    // console.log(p.id)
                   }
                 }}
               >
@@ -177,32 +293,10 @@ const PlayerApp = () => {
 
 export default PlayerApp
 
-// <div className="content-list">
-//   <div className="accordion__content">
-//     <div className="accordion__text"> Release text her </div>
-//   </div>
-// </div>
-
-// <div className="content-list">
-//   <div className="accordion__content">
-//     <div className="accordion__text"> Radio text her </div>
-//   </div>
-// </div>
-
-// <div className="content-list">
-//   <div className="accordion__content">
-//     <div className="accordion__text"> Contact text her </div>
-//   </div>
-// </div>
-
-// <div className="content-title">
-//   <p className="accordion__title">Releases:</p>
-// </div>
-
-// <div className="content-title">
-//   <p className="accordion__title">Radio:</p>
-// </div>
-
-// <div className="content-title">
-//   <p className="accordion__title">Contact:</p>
-// </div>
+//       <img
+//   className={"bigImage"}
+//   alt={``}
+//   key={``}
+//   src={slumpData.allContentfulSlumpContent.edges[1].node.visualSlump.file.url
+//   }width="40px"
+// />

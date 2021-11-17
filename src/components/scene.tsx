@@ -4,7 +4,7 @@ import * as THREE from 'three'
 import {OrbitControls} from "three/examples/jsm/controls/OrbitControls";
 import './App.css';
 import {Grid} from "./grid-test.tsx";
-import newpic from'./images/newpic2.jpg';
+import newpic from'./images/slumpspace.png';
 
 
 
