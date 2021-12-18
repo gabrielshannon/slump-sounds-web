@@ -27,7 +27,7 @@ const PlayerApp = () => {
     {
       id: "Radio / Campaigns:",
       items: [
-               {
+        {
           item: "SLUMP SOUNDS 23.11.21 // KINDRED RADIO",
           data: "https://www.youtube.com/embed/Sei7gYCnHEQ?autoplay=0",
           audio: null,
@@ -70,7 +70,8 @@ const PlayerApp = () => {
           item:
             "Rotation w Noah Tucker - Slump Sounds 19.08.20 // Vandelay Radio",
           data: null,
-          audio: slumpData.allWpMediaItem.edges[3].node.mediaItemUrl,
+          audio:
+            "https://slmpbackend8080.online/wp-content/uploads/2021/11/Rotation-w-Noah-Tucker-Slump-Sounds-Vandelay-Radio.mp3",
         },
 
         {
@@ -82,46 +83,54 @@ const PlayerApp = () => {
           item:
             "Slump Sounds Presents... Valentines Special w_ Curbside 14.02.2019 // Kmah Radio",
           data: null,
-          audio: slumpData.allWpMediaItem.edges[2].node.mediaItemUrl,
+          audio:
+            "http://slmpbackend8080.online/wp-content/uploads/2021/11/Slump-Sounds-Presents...-Valentines-Special-w_-Curbside-Kmah-Radio-14.02.2019.mp3",
         },
 
         {
           item:
             "Slump Sounds Presents... 2 HOUR SPECIAL VOL.1 05.07.2019 // Kmah Radio",
           data: null,
-          audio: slumpData.allWpMediaItem.edges[4].node.mediaItemUrl,
+          audio:
+            "https://slmpbackend8080.online/wp-content/uploads/2021/11/Slump-Sounds-Presents...-2-HOUR-SPECIAL-VOL.1-Kmah-Radio-05.07.2019.mp3",
         },
 
         {
           item:
             "Slump Sounds Presents... Baccy Beard b2b Vesarchie 11.04.19 // Kmah Radio",
           data: null,
-          audio: slumpData.allWpMediaItem.edges[5].node.mediaItemUrl,
+          audio:
+            "https://slmpbackend8080.online/wp-content/uploads/2021/11/Slump-Sounds-Presents...-Baccy-Beard-b2b-Vesarchie-Kmah-Radio-11.04.19.mp3",
         },
 
         {
           item: "Slump Sounds Presents... Holloway 05.06.2019 // Kmah Radio ",
           data: null,
-          audio: slumpData.allWpMediaItem.edges[7].node.mediaItemUrl,
+          audio:
+            "https://slmpbackend8080.online/wp-content/uploads/2021/11/Slump-Sounds-Presents...-Holloway-Kmah-Radio-05.06.2019.mp3",
         },
 
         {
           item: "Slump Sounds Presents... FAE 14.03.2019 // Kmah Radio",
           data: null,
-          audio: slumpData.allWpMediaItem.edges[6].node.mediaItemUrl,
+          audio:
+            "https://slmpbackend8080.online/wp-content/uploads/2021/11/Slump-Sounds-Presents...-FAE-Kmah-Radio-14.03.2019.mp3",
         },
 
         {
           item: "Slump Sounds Presents... PROSPA 29_08_2019 // Kmah Radio",
           data: null,
-          audio: slumpData.allWpMediaItem.edges[8].node.mediaItemUrl,
+          audio:
+            "https://slmpbackend8080.online/wp-content/uploads/2021/11/Slump-Sounds-Presents...-PROSPA-Kmah-Radio-29_08_2019-1.mp3",
         },
 
         {
-          item: "SLUMP SOUNDS PRESENTS: SUMMER SLAM PROMO MIX 18.08.2019 (JOB TYPE)",
+          item:
+            "SLUMP SOUNDS PRESENTS: SUMMER SLAM PROMO MIX 18.08.2019 (JOB TYPE)",
 
           data: null,
-          audio: slumpData.allWpMediaItem.edges[10].node.mediaItemUrl,
+          audio:
+            "https://slmpbackend8080.online/wp-content/uploads/2021/11/Job-Type-Summer-Slam-tape-1.mp3",
         },
       ],
     },
@@ -130,74 +139,81 @@ const PlayerApp = () => {
       id: "Releases:",
       items: [
         {
-          item: "baccy bear - 4head",
-          data: slumpData.allWpMediaItem.edges[12].node.mediaItemUrl,
-          audio: slumpData.allWpMediaItem.edges[14].node.mediaItemUrl,
+          item: "baccy beard - 4head",
+          data:
+            "https://slmpbackend8080.online/wp-content/uploads/2021/11/4headART.png",
+          audio:
+            "https://slmpbackend8080.online/wp-content/uploads/2021/11/4head-320kbs-MP3-1.mp3",
         },
 
         {
-          item: "baccy bear - Kov",
-          data: slumpData.allWpMediaItem.edges[12].node.mediaItemUrl,
-          audio: slumpData.allWpMediaItem.edges[13].node.mediaItemUrl,
+          item: "baccy beard - Kov",
+          data:
+            "https://slmpbackend8080.online/wp-content/uploads/2021/11/4headART.png",
+          audio: "https://slmpbackend8080.online/2021/11/07/baccy-beard-kov/",
         },
 
         {
-          item: "baccy bear - Unfolded",
-          data: slumpData.allWpMediaItem.edges[12].node.mediaItemUrl,
-          audio: slumpData.allWpMediaItem.edges[11].node.mediaItemUrl,
+          item: "baccy beard - Unfolded",
+          data:
+            "https://slmpbackend8080.online/wp-content/uploads/2021/11/4headART.png",
+          audio:
+            "https://slmpbackend8080.online/wp-content/uploads/2021/11/Unfolded-320kbs-MP3.mp3",
         },
 
         {
           item: "Job Type - Numbers Vol.3",
-          data: slumpData.allWpMediaItem.edges[25].node.mediaItemUrl,
-          audio: slumpData.allWpMediaItem.edges[23].node.mediaItemUrl,
+          data: "https://slmpbackend8080.online/wp-content/uploads/2021/11/a2448293808_10.png",
+          audio: "https://slmpbackend8080.online/wp-content/uploads/2021/11/Job-Type-Numbers-Vol.3-1.mp3",
         },
 
         {
           item: "Job Type - Numbers Vol.2",
-          data: slumpData.allWpMediaItem.edges[25].node.mediaItemUrl,
-          audio: slumpData.allWpMediaItem.edges[26].node.mediaItemUrl,
+          data: "https://slmpbackend8080.online/wp-content/uploads/2021/11/Job-Type-Numbers-Vol.2.png",
+          audio: "https://slmpbackend8080.online/wp-content/uploads/2021/11/Job-Type-Numbers-Vol.2.mp3",
         },
 
         {
           item: "baccy bear - nearest@exomoon",
-          data: slumpData.allWpMediaItem.edges[15].node.mediaItemUrl,
-          audio: slumpData.allWpMediaItem.edges[18].node.mediaItemUrl,
+          data: "https://slmpbackend8080.online/wp-content/uploads/2021/11/SLMP_D001_-baccy-beard-nearest@exomoon-mp3-image-2048x2048.png",
+          audio: "https://slmpbackend8080.online/wp-content/uploads/2021/11/SLMP_D001_-baccy-beard-nearest@exomoon.mp3",
         },
 
         {
           item: "Lydios - LOCKDOWN IN ELLESS VOL. 1",
-          data: null,
-          audio: slumpData.allWpMediaItem.edges[19].node.mediaItemUrl,
+          data: "https://slmpbackend8080.online/wp-content/uploads/2021/11/lydios-lockdown-in-elles.jpeg",
+          audio: "https://slmpbackend8080.online/wp-content/uploads/2021/11/Lockdown-in-ELLESS-Vol.1.mp3",
         },
 
         {
           item: "Lydios - LOCKDOWN IN ELLESS VOL. 2",
-          data: null,
-          audio: slumpData.allWpMediaItem.edges[20].node.mediaItemUrl,
+          data: "https://slmpbackend8080.online/wp-content/uploads/2021/11/Lockdown-in-Elless-Vol.2.jpg",
+          audio: "https://slmpbackend8080.online/wp-content/uploads/2021/11/Lockdown-in-ELLESS-Vol.2.mp3",
         },
 
         {
           item: "SLUMP - Production Tape 1",
-          data: slumpData.allWpMediaItem.edges[16].node.mediaItemUrl,
-          audio: slumpData.allWpMediaItem.edges[17].node.mediaItemUrl,
+          data: "https://slmpbackend8080.online/wp-content/uploads/2021/11/a2448293808_102.png",
+          audio: "https://slmpbackend8080.online/wp-content/uploads/2021/11/SLMP001_-LUMP-TAPE-1.mp3",
         },
         {
           item: "Lydios - LS17",
-          data: null,
-          audio: slumpData.allWpMediaItem.edges[20].node.mediaItemUrl,
+          data: "https://slmpbackend8080.online/wp-content/uploads/2021/11/LS17.png",
+          audio: "https://slmpbackend8080.online/wp-content/uploads/2021/11/LS17.mp3",
         },
 
         {
           item: "Lydios - LS22",
-          data: null,
-          audio: slumpData.allWpMediaItem.edges[0].node.mediaItemUrl,
+          data:
+            "https://slmpbackend8080.online/wp-content/uploads/2021/11/LS22.png",
+          audio:
+            "https://slmpbackend8080.online/wp-content/uploads/2021/11/LS22.mp3",
         },
 
         {
           item: "Lydios - SOLIDMIXTAPE1",
-          data: slumpData.allWpMediaItem.edges[22].node.mediaItemUrl,
-          audio: slumpData.allWpMediaItem.edges[24].node.mediaItemUrl,
+          data: "https://slmpbackend8080.online/wp-content/uploads/2021/11/a2448293808_101.png",
+          audio: "https://slmpbackend8080.online/wp-content/uploads/2021/11/LYDIOS-SOLIDMIXTAPE1.mp3",
         },
       ],
     },
