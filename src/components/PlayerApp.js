@@ -150,7 +150,7 @@ const PlayerApp = () => {
           item: "baccy beard - Kov",
           data:
             "https://slmpbackend8080.online/wp-content/uploads/2021/11/4headART.png",
-          audio: "https://slmpbackend8080.online/2021/11/07/baccy-beard-kov/",
+          audio: "https://slmpbackend8080.online/wp-content/uploads/2021/11/Kov-320kbs-MP3.mp3",
         },
 
         {
