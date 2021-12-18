@@ -1,28 +1,31 @@
 @font-face {
-    font-family: 'Grotesk-Remix-reg';
-    src: url('fonts/39DD9F_0_0.woff') format('woff');
-    src: url('fonts/39DD9F_0_0.ttf') format('truetype'), url('fonts/39DD9F_0_0.woff') format('woff'), url('fonts/39DD9F_0_0.woff2') format('eot'), url('fonts/39DD9F_0_0.ttf') format('eot');
-    font-style: normal;
+  font-family: "Grotesk-Remix-reg";
+  src: url("fonts/39DD9F_0_0.woff") format("woff");
+  src: url("fonts/39DD9F_0_0.ttf") format("truetype"),
+    url("fonts/39DD9F_0_0.woff") format("woff"),
+    url("fonts/39DD9F_0_0.woff2") format("eot"),
+    url("fonts/39DD9F_0_0.ttf") format("eot");
+  font-style: normal;
 }
 
 body {
-    font-family: 'Grotesk-Remix-reg', sans-serif;
-    font-style: normal;
-    color:  #cfcfcf;
-    font-size: 12px
+  font-family: "Grotesk-Remix-reg", sans-serif;
+  font-style: normal;
+  color: #cfcfcf;
+  font-size: 12px;
 }
 
-  html body{
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    margin: 0;
-  }
+html body {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: 0;
+}
 
 /* NON-GRID FALLBACK CODE */
 
-@media(grid:0){
+@media (grid: 0) {
   /* MOBILE */
 
   @media (min-width: 8px) {
@@ -34,22 +37,25 @@ body {
       padding: 0;
     }
 
-    
-     .anime {
-        right: 45%;
+    .anime {
+      right: 45%;
     }
-   
+
+      .myMarque {
+      color: rgb(173, 173, 173);
+    }
+
     .container {
       height: 100vh;
       width: 100vw;
       display: grid;
       /* grid-template: 700px 200px 25px / 100px 400px 100px; */
-      grid-template: 7fr 0.25fr / 1fr 4fr 1fr;
+      grid-template: 6fr 0.25fr / 1fr 4fr 1fr;
       gap: 10px;
       grid-template-areas:
         "LT nested_content RT"
         "LB footer RB";
-      z-index: 1;   
+      z-index: 1;
     }
 
     .LT {
@@ -63,10 +69,10 @@ body {
       grid-area: RT;
     }
 
-    .nested_content{
+    .nested_content {
       /* grid-area: nested_content; */
-      grid-template: 1fr 0.35fr / 1fr;
-      display: grid; 
+      grid-template: 0.05fr 1fr 0.35fr / 1fr;
+      display: grid;
     }
 
     .RM {
@@ -86,7 +92,6 @@ body {
       font-family: Arial, Helvetica, sans-serif;
       font-style: normal;
       font-size: 12px;
-
     }
 
     .headerBg {
@@ -99,13 +104,13 @@ body {
       right: 20%;
     }
 
-     .title {
+    .title {
       position: relative;
       left: 42%;
       top: 10px;
     }
 
-      .center {
+    .center {
       position: absolute;
       left: 45%;
       top: 35%;
@@ -119,29 +124,25 @@ body {
       z-index: 100;
     }
 
-
-    .logo{
-       margin-bottom: 3px;
+    .logo {
+      margin-bottom: 3px;
     }
 
-    .tape{
+    .tape {
       position: relative;
-       top: 80%;
-       left: 25%;
+      top: 80%;
+      left: 25%;
     }
 
     .menu {
-    /* width: 80px; */
-       position: relative;
-    left: 25%;
-    font-family: 'Grotesk-Remix-reg', sans-serif;
-    font-style: bold;
-    background: rgb(230, 230, 230);
-    /* border: 0.5px solid; */
-    /* width: 150%; */
-    
-   
-}
-  
+      /* width: 80px; */
+      position: relative;
+      left: 25%;
+      font-family: "Grotesk-Remix-reg", sans-serif;
+      font-style: bold;
+      background: rgb(230, 230, 230);
+      /* border: 0.5px solid; */
+      /* width: 150%; */
+    }
   }
 }

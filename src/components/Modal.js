@@ -46,11 +46,14 @@ export default function Modal({ open, onClose, children, myActiveSet }) {
       </>
     )
   } else if (myActiveSet === 1) {
+    if(children === null) {
+      return (<></>)
+    }
     return (
       <>
         <div style={MODAL_STYLES}>
           <div className="outer-content-2">
-            <div className="bar-2" onClick={onClose}></div>
+            {/* <div className="bar-2" onClick={onClose}></div> */}
 
             <div className="imagePlayer">
               <img className="displayImage" src={children} width="40%" />
@@ -64,16 +67,34 @@ export default function Modal({ open, onClose, children, myActiveSet }) {
       <>
         <div style={MODAL_STYLES}>
           <div className="outer-content" onClick={onClose}>
-            <div className="bar"></div>
+            {/* <div className="bar"></div> */}
             <div className="info-content">
               <div className="row1">
-                <div className="contact-title">
-                  {" "}
-                  <p> Slump Sounds 0113/SE 🛒 </p>
-                </div>
                 <div className="contact-info">
-                  {" "}
-                  <p>contact/bookings: slumpsounds@outlook.com </p>
+                  Slump Sounds 0113/SE 🛒
+                  <br></br>
+                  <a href="https://www.instagram.com/slumpsoundslds/">instagram</a>
+                  <br></br>
+                  <a href="https://www.facebook.com/slumpsounds">instagram2</a>
+                  <br></br>
+                  <a href="https://www.instagram.com/algillyou/">Al Gill</a>
+                  <br></br>
+                  <a href="https://www.instagram.com/baccyb123/">baccy beard</a>
+                  <br></br>
+                  <a href="https://www.instagram.com/vesarchie/">Versarchie</a>
+                  <br></br>
+                  <a href="https://www.instagram.com/job_type__/">Job Type</a>
+                  <br></br>
+                  <a href="https://slumpsounds.bandcamp.com/">Bandcamp</a>
+                  <br></br>
+                  <a href="https://www.w3schools.com">Merch *COMING SOON*</a>
+                  <br></br>
+                  <a href="slumpsounds@outlook.com">CONTACT</a>
+                  <br></br>
+                  <br></br>
+                  <br></br>
+                  Website by{" "}
+                  <a href="https://www.instagram.com/nice.amount/">Gabriel Shannon</a>
                 </div>
               </div>
               <br></br>
