@@ -1,24 +1,107 @@
+/* @media (min-width: 320px) {
+    .mediaWindow {
+    width: 250px;
+    height: 175px;
+  }
+} */
+
+@media (min-width: 1025px) {
+  .mediaWindow {
+    width: 560px;
+    height: 315px;
+  }
+
+  .imagePlayer {
+    width: 40%;
+  }
+}
+
+@media (min-width: 650px) {
+  .mediaWindow {
+    width: 550px;
+    height: 309px;
+  }
+}
+
+@media (max-width: 415px) {
+  .mediaWindow {
+    width: 345px;
+    height: 250px;
+  }
+
+  .info-content {
+  width: 325px !important;
+  top: 40% !important;;
+
+}
+
+  .row1 {
+      grid-template-columns: 1fr 0.5fr !important;
+  }
+}
+
 .imagePlayer {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+
+  /* width: 40%; */
+}
+
+.displayImage {
+  border-style: solid;
+  stroke-width: 1;
+  border-color: rgba(199, 199, 199, 0.5);
+}
+
+.nested_app {
+  /* display: none; */
+}
+
+.logo-overlay {
+  width: 100%;
+}
+
+.logo-overlay2 {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.bottom-paragraph {
+  display: flex;
 }
 
 .info-content {
-  margin-top: 10px;
+  /* margin-top: 150px;
+  width: 50%;
+  height: 300px; */
+  /* height: 100%; */
   width: 500px;
-  height: 300px;
-  display: flex;
-  /* flex-direction: column; */
-  /* background-color: rgba(207, 207, 207, 0.2); */
+  position: absolute;
+  top: 30%; /* position the top  edge of the element at the middle of the parent */
+  left: 50%; /* position the left edge of the element at the middle of the parent */
 
+  transform: translate(
+    -50%,
+    -50%
+  ); /* This is a shorthand of
+                                         translateX(-50%) and translateY(-50%) */
+  display: flex;
+  font-size: 12px;
+  text-align: left;
+  color: rgb(20, 20, 20) !important;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.6;
   border-radius: 1px; /* prefix not needed anymore */
 }
 
 .outer-content {
   color: rgb(0, 0, 0) !important;
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  justify-content: center; */
+
+  /* display: flex;
+  flex-direction: column; */
 }
 
 .outer-content-2 {
@@ -34,7 +117,8 @@
 
 .bar {
   min-height: 7px;
-  color: rgb(255, 0, 0) !important;
+  color: rgb(47, 47, 47) !important;
+  font-size: 12px;
   background-color: rgb(182, 182, 182, 0.3);
   cursor: pointer;
 }
@@ -54,12 +138,14 @@
 
 .bar-2 {
   min-height: 7px;
-  width: 40%;
-  color: rgb(255, 0, 0) !important;
+  width: 55%;
+  color: rgb(47, 47, 47) !important;
   display: flex;
   background-color: rgb(182, 182, 182, 0.3);
-  justify-content: center;
-  align-items: center;
+  font-size: 12px;
+  /* justify-content: center;
+  align-items: center; */
+  cursor: pointer;
   /* left: 75%; */
 }
 
@@ -80,10 +166,16 @@
   object-fit: cover;
 }
 
+.header-content-overlay {
+  margin-bottom: 20px;
+}
+
 .row1 {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
+  display: grid;
+  grid-template-columns: 1fr 0.5fr 0.25fr;
+  cursor: pointer;
+  gap: 15px;
+  /* background-color: rgb(182, 182, 182, 0.3); */
 }
 
 .Gabriel {

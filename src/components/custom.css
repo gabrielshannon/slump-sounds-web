@@ -25,124 +25,147 @@ html body {
 
 /* NON-GRID FALLBACK CODE */
 
-@media (grid: 0) {
-  /* MOBILE */
+/* MOBILE */
 
-  @media (min-width: 8px) {
-    /* BROWSER */
+/* BROWSER */
 
-    body,
-    html {
-      margin: 0;
-      padding: 0;
-    }
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
 
-    .anime {
-      right: 45%;
-    }
+.anime {
+  right: 45%;
+}
 
-      .myMarque {
-      color: rgb(173, 173, 173);
-    }
+.myMarque {
+  color: rgb(133, 133, 133);
+}
 
-    .container {
-      height: 100vh;
-      width: 100vw;
-      display: grid;
-      /* grid-template: 700px 200px 25px / 100px 400px 100px; */
-      grid-template: 6fr 0.25fr / 1fr 4fr 1fr;
-      gap: 10px;
-      grid-template-areas:
-        "LT nested_content RT"
-        "LB footer RB";
-      z-index: 1;
-    }
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  /* grid-template: 700px 200px 25px / 100px 400px 100px; */
+  grid-template: 6fr 0.25fr / 1fr 4fr 1fr;
+  gap: 10px;
+  grid-template-areas:
+    "LT nested_content RT"
+    "LB footer RB";
+  z-index: 1;
+}
 
-    .LT {
-      grid-area: LT;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
+.LT {
+  grid-area: LT;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-    .RT {
-      grid-area: RT;
-    }
+.RT {
+  grid-area: RT;
+}
 
-    .nested_content {
-      /* grid-area: nested_content; */
-      grid-template: 0.05fr 1fr 0.35fr / 1fr;
-      display: grid;
-    }
+.nested_content {
+  /* grid-area: nested_content; */
+  grid-template: 0.05fr 1fr 0.35fr / 1fr;
+  display: grid;
+}
 
-    .RM {
-      /* background-color: rgb(222, 253, 85); */
-      grid-area: RM;
-    }
+.RM {
+  /* background-color: rgb(222, 253, 85); */
+  grid-area: RM;
+}
 
-    .footer {
-      /* background-color: rgb(100, 247, 64); */
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      color: #ffffff;
-      grid-area: footer;
-      margin: 12px;
-      font-family: Arial, Helvetica, sans-serif;
-      font-style: normal;
-      font-size: 12px;
-    }
+.footer {
+  /* background-color: rgb(100, 247, 64); */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  grid-area: footer;
+  margin: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-size: 12px;
+}
 
-    .headerBg {
-      z-index: -1;
-    }
+.headerBg {
+  z-index: -1;
+}
 
-    .flame {
-      position: absolute;
-      top: 50%;
-      right: 20%;
-    }
+.flame {
+  position: absolute;
+  top: 50%;
+  right: 20%;
+}
 
-    .title {
-      position: relative;
-      left: 42%;
-      top: 10px;
-    }
+.title {
+  position: relative;
+  left: 42%;
+  top: 10px;
+}
 
-    .center {
-      position: absolute;
-      left: 45%;
-      top: 35%;
-      z-index: 1;
-    }
+.center {
+  position: absolute;
+  left: 45%;
+  top: 35%;
+  z-index: 1;
+}
 
-    .snake {
-      position: absolute;
-      left: 45%;
-      top: 35%;
-      z-index: 100;
-    }
+.snake {
+  position: absolute;
+  left: 45%;
+  top: 35%;
+  z-index: 100;
+}
 
-    .logo {
-      margin-bottom: 3px;
-    }
+.logo {
+  margin-bottom: 3px;
+}
 
-    .tape {
-      position: relative;
-      top: 80%;
-      left: 25%;
-    }
+.tape {
+  position: relative;
+  top: 80%;
+  left: 25%;
+}
 
-    .menu {
-      /* width: 80px; */
-      position: relative;
-      left: 25%;
-      font-family: "Grotesk-Remix-reg", sans-serif;
-      font-style: bold;
-      background: rgb(230, 230, 230);
-      /* border: 0.5px solid; */
-      /* width: 150%; */
-    }
+.menu {
+  /* width: 80px; */
+  position: relative;
+  left: 25%;
+  font-family: "Grotesk-Remix-reg", sans-serif;
+  font-style: bold;
+  background: rgb(230, 230, 230);
+  /* border: 0.5px solid; */
+  /* width: 150%; */
+}
+
+@media (min-width: 1025px) {
+  .container {
+    grid-template: 6fr 0.25fr / 1fr 4fr 1fr;
+    grid-template-areas:
+      "LT nested_content RT"
+      "LB footer RB";
+  }
+}
+
+/* @media (min-width: 550px) {
+  .container {
+    grid-template: 6fr 0.25fr / 0fr 4fr 0fr;
+    grid-template-areas:
+      "LT nested_content RT"
+      "LB footer RB";
+  }
+} */
+
+@media (max-width: 415px) {
+  .container {
+    grid-template: 6fr 0.25fr / 0fr 4fr 0fr;
+    grid-template-areas:
+      "LT nested_content RT"
+      "LB footer RB";
   }
 }

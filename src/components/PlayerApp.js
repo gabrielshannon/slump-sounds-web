@@ -6,6 +6,9 @@ import "./custom.css"
 import "./player.css"
 import { ReactNode as playPause } from "./images/Asset1.svg"
 import Modal from "./Modal"
+import LoadingOverlay from 'react-loading-overlay'
+import styled from 'styled-components'
+
 
 import { graphql, useStaticQuery } from "gatsby"
 
@@ -22,6 +25,18 @@ const PlayerApp = () => {
       }
     }
   `)
+
+  const StyledLoader = styled(LoadingOverlay)`
+  width: 250px;
+  height: 400px;
+  overflow: scroll;
+  .MyLoader_overlay {
+    background: rgba(255, 0, 0, 0.5);
+  }
+  &.MyLoader_wrapper--active {
+    overflow: hidden;
+  }
+`
 
   const accordionItems = [
     {
@@ -141,7 +156,7 @@ const PlayerApp = () => {
         {
           item: "baccy beard - 4head",
           data:
-            "https://slmpbackend8080.online/wp-content/uploads/2021/11/4headART.png",
+            "https://slmpbackend8080.online/wp-content/uploads/2021/12/key-1024x1024.png",
           audio:
             "https://slmpbackend8080.online/wp-content/uploads/2021/11/4head-320kbs-MP3-1.mp3",
         },
@@ -149,14 +164,14 @@ const PlayerApp = () => {
         {
           item: "baccy beard - Kov",
           data:
-            "https://slmpbackend8080.online/wp-content/uploads/2021/11/4headART.png",
+            "https://slmpbackend8080.online/wp-content/uploads/2021/12/key-1024x1024.png",
           audio: "https://slmpbackend8080.online/wp-content/uploads/2021/11/Kov-320kbs-MP3.mp3",
         },
 
         {
           item: "baccy beard - Unfolded",
           data:
-            "https://slmpbackend8080.online/wp-content/uploads/2021/11/4headART.png",
+           "https://slmpbackend8080.online/wp-content/uploads/2021/12/key-1024x1024.png",
           audio:
             "https://slmpbackend8080.online/wp-content/uploads/2021/11/Unfolded-320kbs-MP3.mp3",
         },
@@ -174,20 +189,20 @@ const PlayerApp = () => {
         },
 
         {
-          item: "baccy bear - nearest@exomoon",
-          data: "https://slmpbackend8080.online/wp-content/uploads/2021/11/SLMP_D001_-baccy-beard-nearest@exomoon-mp3-image-2048x2048.png",
+          item: "baccy beard - nearest@exomoon",
+          data: "https://slmpbackend8080.online/wp-content/uploads/2021/12/SLMP_D001_-baccy-beard-nearest@exomoon-mp3-image-2048x2048-1.png",
           audio: "https://slmpbackend8080.online/wp-content/uploads/2021/11/SLMP_D001_-baccy-beard-nearest@exomoon.mp3",
         },
 
         {
           item: "Lydios - LOCKDOWN IN ELLESS VOL. 1",
-          data: "https://slmpbackend8080.online/wp-content/uploads/2021/11/lydios-lockdown-in-elles.jpeg",
+          data: "https://slmpbackend8080.online/wp-content/uploads/2021/12/saveme-1024x1024.png",
           audio: "https://slmpbackend8080.online/wp-content/uploads/2021/11/Lockdown-in-ELLESS-Vol.1.mp3",
         },
 
         {
           item: "Lydios - LOCKDOWN IN ELLESS VOL. 2",
-          data: "https://slmpbackend8080.online/wp-content/uploads/2021/11/Lockdown-in-Elless-Vol.2.jpg",
+          data: "https://slmpbackend8080.online/wp-content/uploads/2021/12/Lockdown-in-Elless-Vol.2-edited.jpg",
           audio: "https://slmpbackend8080.online/wp-content/uploads/2021/11/Lockdown-in-ELLESS-Vol.2.mp3",
         },
 
@@ -245,13 +260,17 @@ const PlayerApp = () => {
 
   return (
     <div className="content">
+ 
       <Modal
         open={isOpen}
         onClose={() => setIsOpen(false)}
         myActiveSet={activeSet}
+        children={accordionItems[activeSet].items[activeTrack].data}
       >
-        {accordionItems[activeSet].items[activeTrack].data}
+        {accordionItems[activeSet].items[activeTrack]}
       </Modal>
+      {console.log("my child is" + accordionItems[activeSet].items[activeTrack].data)}
+      
       {/* {console.log(slumpData.allWpMediaItem.edges[3].node.mediaItemUrl)}; */}
       {accordionItems.map((p, index) => {
         return (
@@ -300,6 +319,7 @@ const PlayerApp = () => {
 
       <div className="content-player">
         <AudioPlayer
+  
           src={accordionItems[activeSet].items[activeTrack].audio}
           CustomIcons={{
             play: playPause,
@@ -309,7 +329,9 @@ const PlayerApp = () => {
           {accordionItems[activeSet].items[activeTrack].item}
         </div>
       </div>
+      
     </div>
+    
   )
 }
 

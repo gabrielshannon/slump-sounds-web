@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect } from "react"
-import Accordion from "./finalPlayer.js"
+
 import "./custom.css"
 import Marquee from "react-fast-marquee"
 
@@ -7,10 +7,6 @@ import AudioPlayer from "react-h5-audio-player"
 import "react-h5-audio-player/lib/styles.css"
 
 import PlayerApp from "./PlayerApp.js"
-import bgIm from "./images/screenshot2.png"
-import flame from "./images/400.gif"
-import snake2 from "./images/coloursnake.gif"
-import tape from "./images/tape.png"
 import logo from "./images/myasset.svg"
 
 import tempLOGO from "./banner.svg"
