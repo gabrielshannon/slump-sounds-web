@@ -18,7 +18,7 @@ const MODAL_STYLES2 = {
   left: 0,
   right: 0,
   bottom: 0,
-  backdropFilter: "blur(5px)",
+  // backgroundColor: "white",
   display: "flex",
   justifyContent: "center",
   zIndex: 9999,
@@ -97,35 +97,38 @@ export default function Modal({ open, onClose, children, myActiveSet }) {
           <div className="outer-content" onClick={onClose}>
             {/* <div className="bar"></div> */}
             <div className="info-content">
-              <div className="row1">
-                <div className="col-1">
+            
+         
+              <div className="info-logo-box">
                   <img className="logo-overlay" src={logoOverlay} />
-                  <br></br>
-                  &nbsp;Slump Sounds is an electronic music collective that
-                  began hosting raves in Leeds and South London in 2017. Our
-                  projects span a catalog of homemade production showcasing new
-                  media, live-streaming and online to physical release, cassette
+
+                  </div>
+                
+           <div className="info-paragraph-statement">
+                  Slump Sounds is an electronic music collective that
+                  began hosting raves in Leeds and South London 2017. Our
+                  projects span a catalog of homemade production, showcasing new
+                  media, live-streaming and online in addition to physical release, cassette
                   mixtapes, and USBs.
-                  <br></br>
-                  <br></br>
-                  Below the radar, our commitment to unhinged dance-floor
-                  mechanics and hardcore breaks our production catalogue
-                  presents the best of left-field sounds, in addition to our our
-                  monthly show on Kindred Radio. &nbsp;
-                  <br></br>
-                  <br></br>
-                  all rights reserved: 2017 — 2022
+                  
+      </div>
+
+       <div className="info-paragraph-artits">
+                 DJ Fake-ID, Versarchie, Job Type, baccy beard,
+          
+
+        </div>
+           <div className="info-paragraph-artits">
+                     instagram, bandcamp, facebook,
+                    soundcloud 
+               
+                   
+
                 </div>
 
-                <div className="col-2">
-                  <div className="paragraph1">
-                    >>>>>>>>>>>>>>>>>>>>>
-                    
-                    <br></br>
-                    al gill, versarchie, job type, baccy beard, <br></br>
-                    ---------------------------- <br></br>instagram, bandcamp, facebook,
-                    soundcloud <br></br>
-                    <img
+                <div className="info-paragraph-misc">
+
+                     <img
                       className="logo-overlay2"
                       width="50px"
                       src={logoOverlay2}
@@ -135,15 +138,11 @@ export default function Modal({ open, onClose, children, myActiveSet }) {
                       width="50px"
                       src={logoOverlay3}
                     />
-                  </div>
-                     </div>
-
-                  <div className="col-3">
-                    website by gabriel shannon 0113/SE 🛒
-                  </div>
+                     0113/SE 🛒 / https://linktr.ee/slumpsounds
+                    </div>
              
-              </div>
-              <br></br>
+            
+             
             </div>
           </div>
         </div>

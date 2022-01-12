@@ -71,28 +71,29 @@
 }
 
 .info-content {
-  /* margin-top: 150px;
-  width: 50%;
-  height: 300px; */
-  /* height: 100%; */
-  width: 500px;
-  position: absolute;
-  top: 30%; /* position the top  edge of the element at the middle of the parent */
-  left: 50%; /* position the left edge of the element at the middle of the parent */
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23333' stroke-width='2' stroke-dasharray='0%2c 7%2c 43%2c 10' stroke-dashoffset='42' stroke-linecap='square'/%3e%3c/svg%3e");
 
+  width: 350px;
+  position: absolute;
+ 
+  top: 35%; /* position the top  edge of the element at the middle of the parent */
+  left: 50%; /* position the left edge of the element at the middle of the parent */
+padding: 5px;
   transform: translate(
     -50%,
     -50%
   ); /* This is a shorthand of
                                          translateX(-50%) and translateY(-50%) */
-  display: flex;
+display: flex;
+flex-direction: column;
   font-size: 12px;
   text-align: left;
   color: rgb(20, 20, 20) !important;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center;
+  align-items: center; */
   line-height: 1.6;
-  border-radius: 1px; /* prefix not needed anymore */
+  /* gap: 5px; */
+
 }
 
 .outer-content {
@@ -161,6 +162,8 @@
   align-items: center;
 }
 
+
+
 .banner {
   /* width: 50%; */
   object-fit: cover;
@@ -170,12 +173,41 @@
   margin-bottom: 20px;
 }
 
-.row1 {
-  display: grid;
-  grid-template-columns: 1fr 0.5fr 0.25fr;
+.info-logo-box {
+
+  display: flex;
+  flex-direction: column;
+    padding: 5px;
   cursor: pointer;
-  gap: 15px;
+   background-color:  rgb(182, 182, 182, 0.3);
+   
+  /* gap: px; */
   /* background-color: rgb(182, 182, 182, 0.3); */
+}
+
+.info-paragraph-statement {
+      padding: 5px;
+  cursor: pointer;
+   background-color:  rgb(182, 182, 182, 0.3);
+  /* gap: px; */
+
+}
+
+.info-paragraph-artits {
+      padding: 5px;
+  cursor: pointer;
+   background-color:  rgb(182, 182, 182, 0.3);
+  /* gap: px; */
+
+}
+
+.info-paragraph-misc {
+      padding: 5px;
+  cursor: pointer;
+  display: flex;
+   background-color:  rgb(182, 182, 182, 0.3);
+  /* gap: px; */
+
 }
 
 .Gabriel {

@@ -45,40 +45,47 @@ const PlayerApp = () => {
         {
           item: "SLUMP SOUNDS 23.11.21 // KINDRED RADIO",
           data: "https://www.youtube.com/embed/Sei7gYCnHEQ?autoplay=0",
-          audio: null,
+          audio: 0,
         },
         {
           item: "SLUMP SOUNDS 12.10.21 // KINDRED RADIO",
           data: "https://www.youtube.com/embed/MGVzGE_oYTI?autoplay=0",
-          audio: null,
+         audio: 0,
         },
         {
           item: "SLUMP SOUNDS 07.09.21 // KINDRED RADIO",
           data: "https://www.youtube.com/embed/qW4CQNdpza0?autoplay=0",
+          audio: 0,
         },
         {
           item: "SLUMP SOUNDS 03.08.21 // KINDRED RADIO",
           data: "https://www.youtube.com/embed/iI9Zjg0i18M?autoplay=0",
+          audio: 0,
         },
         {
           item: "SLUMP SOUNDS // LATITUDE FESTIVAL",
           data: "https://www.youtube.com/embed/zxBWis3Jixw?autoplay=0",
+          audio: 0,
         },
         {
           item: "SLUMP SOUNDS 22.06.21 // KINDRED RADIO",
           data: "https://www.youtube.com/embed/6jKAixyOUno?autoplay=0",
+          audio: 0,
         },
         {
           item: "SLUMP SOUNDS 20.04.21 // KINDRED RADIO",
           data: "https://www.youtube.com/embed/HWW8NQEV2fg?autoplay=0",
+          audio: 0,
         },
         {
           item: "SLUMP SOUNDS 03.11.20 // KINDRED RADIO",
           data: "https://www.youtube.com/embed/0IWsJWxv7Ok?autoplay=0",
+         audio: 0,
         },
         {
           item: "SLUMP SOUNDS 29.09.20 // KINDRED RADIO",
           data: "https://www.youtube.com/embed/9w61G-KfKWI?autoplay=0",
+          audio: 0,
         },
 
         {
@@ -92,6 +99,7 @@ const PlayerApp = () => {
         {
           item: "SLUMP SOUNDS 04.08.20 // KINDRED RADIO",
           data: "https://www.youtube.com/embed/8tClTQ_GWV8?autoplay=0",
+          audio: 0,
         },
 
         {
@@ -235,7 +243,7 @@ const PlayerApp = () => {
 
     {
       id: "Links:",
-      items: [{ item: "", data: "" }],
+      items: [{ item: null, data: null, audio: 0 }],
     },
   ]
 
