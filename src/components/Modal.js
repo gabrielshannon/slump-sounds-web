@@ -24,18 +24,6 @@ const MODAL_STYLES2 = {
   zIndex: 9999,
 }
 
-const OVERLAY_STYLES = {
-  position: "fixed",
-  top: 0,
-  left: 0,
-  right: 0,
-  bottom: 0,
-  zIndex: 1,
-}
-
-const TEXT_STYLES = {
-  textAlign: "center",
-}
 
 export default function Modal({ open, onClose, children, myActiveSet }) {
   if (!open) return null
@@ -49,12 +37,12 @@ export default function Modal({ open, onClose, children, myActiveSet }) {
   
         {/* <div style={OVERLAY_STYLES} /> */}
 
-        <div style={MODAL_STYLES}>
+        <div className="popUp" style={MODAL_STYLES}>
           <div className="outer-content">
             {/* <div className= "close" onClick={onClose}><span className="closing"><p>x</p></span></div> */}
             <div className="bar" onClick={onClose}>
               {" "}
-              <p>{children.item}</p>
+            {children.item}
             </div>
                 {/* {console.log("The child is" + children)} */}
             <div className="youtubePlayer">
@@ -77,12 +65,12 @@ export default function Modal({ open, onClose, children, myActiveSet }) {
     }
     return (
       <>
-        <div style={MODAL_STYLES}>
+        <div className="popUp"  style={MODAL_STYLES}>
           <div className="outer-content-2">
             <div className="imagePlayer">
               <div className="bar-2" onClick={onClose}>
                 {" "}
-                <p>{children.item}</p>
+                {children.item}
               </div>
               <img className="displayImage" src={children.data} width="100%" />
             </div>
@@ -93,7 +81,7 @@ export default function Modal({ open, onClose, children, myActiveSet }) {
   } else if (myActiveSet === 2) {
     return (
       <>
-        <div style={MODAL_STYLES2}>
+        <div style={MODAL_STYLES}>
           <div className="outer-content" onClick={onClose}>
             {/* <div className="bar"></div> */}
             <div className="info-content">
@@ -114,16 +102,21 @@ export default function Modal({ open, onClose, children, myActiveSet }) {
       </div>
 
        <div className="info-paragraph-artits">
-                 DJ Fake-ID, Versarchie, Job Type, baccy beard,
+       <a href="https://www.instagram.com/algillyou/">DJ Fake-ID</a>,
+       <a href="https://www.instagram.com/vesarchie/"> Versarchie</a>,
+       <a href="https://www.instagram.com/job_type__/"> Job Type</a>,
+       <a href="https://www.instagram.com/baccyb123/"> baccy beard</a>
+
+               
           
 
         </div>
            <div className="info-paragraph-artits">
-                     instagram, bandcamp, facebook,
-                    soundcloud 
-               
-                   
-
+           <a href="https://www.instagram.com/slumpsoundslds/">instagram</a>,
+           <a href="https://www.facebook.com/slumpsounds/"> facebook</a>,
+           <a href="https://soundcloud.com/slumpsounds"> soundcloud</a>,
+           <a href="https://slumpsounds.bandcamp.com/"> bandcamp</a>
+          
                 </div>
 
                 <div className="info-paragraph-misc">
@@ -138,7 +131,7 @@ export default function Modal({ open, onClose, children, myActiveSet }) {
                       width="50px"
                       src={logoOverlay3}
                     />
-                     0113/SE 🛒 / https://linktr.ee/slumpsounds
+                     0113/SE 🛒 / <a href="https://slumpsounds.bandcamp.com/">https://linktr.ee/slumpsounds</a> 
                     </div>
              
             

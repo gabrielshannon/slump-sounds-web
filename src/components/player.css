@@ -1,16 +1,19 @@
 /* width */
 ::-webkit-scrollbar {
-  width: 3px;
+  width: 5px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, 0);
+  /* background: rgba(255, 255, 255, 1); */
+  background-color: rgb(182, 182, 182, 0.3);
+
+  
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background-color: rgb(182, 182, 182, 0.3);
+  background-color: rgb(182, 182, 182, 1);
 }
 
 /* Handle on hover */
@@ -46,6 +49,7 @@
 
 .content-title {
   border: 1px solid #cfcfcf;
+
 }
 
 .content-list {
@@ -111,13 +115,14 @@
 /* Style the accordion content title */
 .accordion__title {
   font-family: "Grotesk-Remix-reg", sans-serif;
-  font-weight: bold;
+  /* font-weight: sbold; */
   font-style: normal;
   color: #cfcfcf;
-  font-size: 12px;
+  font-size: 14px;
   text-align: left;
   margin-left: 0px;
   width: 100%;
+  white-space: nowrap;
 }
 
 /* Style the accordion chevron icon */
@@ -260,6 +265,6 @@ li:hover {
 }
 
 .trackTitle {
-  font-size: 15px !important;
+  font-size: 16px !important;
   padding: 10px;
 }

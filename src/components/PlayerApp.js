@@ -40,7 +40,7 @@ const PlayerApp = () => {
 
   const accordionItems = [
     {
-      id: "Radio / Campaigns:",
+      id: "Radio:",
       items: [
         {
           item: "SLUMP SOUNDS 23.11.21 // KINDRED RADIO",
@@ -242,7 +242,7 @@ const PlayerApp = () => {
     },
 
     {
-      id: "Links:",
+      id: "Info:",
       items: [{ item: null, data: null, audio: 0 }],
     },
   ]

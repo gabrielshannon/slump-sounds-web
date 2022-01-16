@@ -24,7 +24,31 @@
 }
 
 @media (max-width: 415px) {
+
+  .myMarque {
+    padding: 2px !important;
+  }
+  .nested_content {
+    grid-template: 0fr 1fr 0.35fr / 1fr; 
+  }
+
+  .banner {
+    display: none !important;
+  }
+
+  .popUp {
+    top:25% !important;
+  }
+
+  .content {
+    grid-template: 0.2fr 0.25fr 0.5fr / 1fr !important;
+  }
+  .trackTitle {
+    font-size: 14px!important;
+  }
+
   .mediaWindow {
+    
     width: 345px;
     height: 250px;
   }
@@ -34,7 +58,6 @@
   top: 40% !important;;
 
 }
-
   .row1 {
       grid-template-columns: 1fr 0.5fr !important;
   }
@@ -45,6 +68,14 @@
   flex-direction: column;
 
   /* width: 40%; */
+}
+
+a:visited{
+  color:blue;
+}
+
+a:hover{
+  color:yellow
 }
 
 .displayImage {
@@ -119,9 +150,10 @@ flex-direction: column;
 .bar {
   min-height: 7px;
   color: rgb(47, 47, 47) !important;
-  font-size: 12px;
+  font-size: 13px;
   background-color: rgb(182, 182, 182, 0.3);
   cursor: pointer;
+  padding: 5px;
 }
 
 .close {
@@ -143,11 +175,12 @@ flex-direction: column;
   color: rgb(47, 47, 47) !important;
   display: flex;
   background-color: rgb(182, 182, 182, 0.3);
-  font-size: 12px;
+  font-size: 13px;
   /* justify-content: center;
   align-items: center; */
   cursor: pointer;
   /* left: 75%; */
+  padding: 5px;
 }
 
 .close-2 {
