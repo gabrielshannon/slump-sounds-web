@@ -49,13 +49,17 @@
 
   .mediaWindow {
     
-    width: 345px;
-    height: 250px;
+    width: 80vw;
+    /* height: 250px; */
+  }
+
+  .info-modal {
+    top:25% !important;
   }
 
   .info-content {
-  width: 325px !important;
-  top: 40% !important;;
+  width: 80vw !important;
+  top: 25% !important;;
 
 }
   .row1 {

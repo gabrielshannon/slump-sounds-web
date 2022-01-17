@@ -81,7 +81,7 @@ export default function Modal({ open, onClose, children, myActiveSet }) {
   } else if (myActiveSet === 2) {
     return (
       <>
-        <div style={MODAL_STYLES}>
+        <div className ="info-modal" style={MODAL_STYLES}>
           <div className="outer-content" onClick={onClose}>
             {/* <div className="bar"></div> */}
             <div className="info-content">
