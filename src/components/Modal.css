@@ -25,6 +25,14 @@
 
 @media (max-width: 415px) {
 
+  .displayImage {
+    border-style: none !important;
+  }
+
+  .bar-2 {
+    display: none !important;
+  }
+
   .myMarque {
     padding: 2px !important;
   }
