@@ -66,8 +66,8 @@
   }
 
   .info-content {
-  width: 80vw !important;
-  top: 25% !important;;
+  /* width: 80vw !important; */
+  top: 20% !important;;
 
 }
   .row1 {
