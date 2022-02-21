@@ -18,12 +18,17 @@
 
 @media (min-width: 650px) {
   .mediaWindow {
-    width: 550px;
-    height: 309px;
+    /* width: 550px;
+    height: 309px; */
+    /* top: 10% */
   }
 }
 
 @media (max-width: 415px) {
+
+  .content {
+    display: none;
+  }
 
   .displayImage {
     border-style: none !important;
