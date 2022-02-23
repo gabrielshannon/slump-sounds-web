@@ -8,8 +8,8 @@
 .hello-full-page {
   text-align: center;
   color: rgb(36, 36, 36);
-  height: 80%;
-  width: 80%;
+  height: 80vh;
+  width: 80vw;
   top: 50%;
  left: 50%;
  display: none;
