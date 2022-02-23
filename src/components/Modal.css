@@ -5,80 +5,27 @@
   }
 } */
 
-@media (min-width: 1025px) {
-  .mediaWindow {
-    width: 560px;
-    height: 315px;
-  }
-
-  .imagePlayer {
-    width: 40%;
-  }
+.hello-full-page {
+  text-align: center;
+  color: rgb(36, 36, 36);
+  height: 80%;
+  width: 80%;
+  top: 50%;
+ left: 50%;
+ display: none;
+ flex-direction: column;
+ transform: translate(-50%, -50%);
+  position: absolute;
 }
 
-@media (min-width: 650px) {
-  .mediaWindow {
-    /* width: 550px;
-    height: 309px; */
-    /* top: 10% */
-  }
-}
 
-@media (max-width: 415px) {
-
-  .content {
-    display: none;
-  }
-
-  .displayImage {
-    border-style: none !important;
-  }
-
-  .bar-2 {
-    display: none !important;
-  }
-
-  .myMarque {
-    padding: 2px !important;
-  }
-  .nested_content {
-    grid-template: 0fr 1fr 0.35fr / 1fr; 
-  }
-
-  .banner {
-    display: none !important;
-  }
-
-  .popUp {
-    top:15% !important;
-  }
-
-  .content {
-    grid-template: 0.2fr 0.25fr 0.5fr / 1fr !important;
-  }
-  .trackTitle {
-    font-size: 14px!important;
-  }
-
-  .mediaWindow {
-    
-    width: 80vw;
-    /* height: 250px; */
-  }
-
-  .info-modal {
-    top:25% !important;
-  }
-
-  .info-content {
-  /* width: 80vw !important; */
-  top: 20% !important;;
+.hello-full-page h1 {
+  color: rgb(255, 255, 255);
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  background-color: rgb(182, 182, 182, 0.3);
 
 }
-  .row1 {
-      grid-template-columns: 1fr 0.5fr !important;
-  }
-}
+
 
 .imagePlayer {
   display: flex;
@@ -263,4 +210,83 @@ flex-direction: column;
 .Gabriel {
   margin-top: auto;
   color: rgb(0, 0, 0) !important;
+}
+
+
+@media (min-width: 1025px) {
+  .mediaWindow {
+    width: 560px;
+    height: 315px;
+  }
+
+  .imagePlayer {
+    width: 40%;
+  }
+}
+
+@media (min-width: 650px) {
+  .mediaWindow {
+    /* width: 550px;
+    height: 309px; */
+    /* top: 10% */
+  }
+}
+
+@media (max-width: 415px) {
+  .hello-full-page{
+    display: flex;
+  }
+
+  .content {
+    display: none;
+  }
+
+  .displayImage {
+    border-style: none !important;
+  }
+
+  .bar-2 {
+    display: none !important;
+  }
+
+  .myMarque {
+    padding: 2px !important;
+  }
+  .nested_content {
+    grid-template: 0fr 1fr 0.35fr / 1fr; 
+  }
+
+  .banner {
+    display: none !important;
+  }
+
+  .popUp {
+    top:15% !important;
+  }
+
+  .content {
+    grid-template: 0.2fr 0.25fr 0.5fr / 1fr !important;
+  }
+  .trackTitle {
+    font-size: 14px!important;
+  }
+
+  .mediaWindow {
+    
+    width: 80vw;
+    /* height: 250px; */
+  }
+
+  .info-modal {
+    top:25% !important;
+  }
+
+  .info-content {
+  /* width: 80vw !important; */
+  top: 20% !important;;
+
+}
+  .row1 {
+      grid-template-columns: 1fr 0.5fr !important;
+  }
 }
