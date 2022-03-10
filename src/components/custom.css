@@ -29,6 +29,10 @@ html body {
 
 /* BROWSER */
 
+.hello-full-page.h1{
+  color: #ffffff;
+}
+
 body,
 html {
   margin: 0;
