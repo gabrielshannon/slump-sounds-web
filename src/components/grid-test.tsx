@@ -17,17 +17,16 @@ export function Grid() {
     <div style={{}}>
       <div className="container">
         <div className="hello-full-page">
-          <h1>PREMIERE: baccy beard - 4head [Slump Sounds]</h1>
-          <h1>4head</h1>
-          <h1>Job Type - Numbers Vol​.​3
+          <h1><a href="https://open.spotify.com/track/4qBxaPykn8KOV9HcWp6Ssv?si=c510e919000b4384">PREMIERE: baccy beard - 4head [Slump Sounds]</a></h1>
+          <h1><a href="https://slumpsounds.bandcamp.com/">4head</a></h1>
+          <h1><a href="https://slumpsounds.bandcamp.com/track/job-type-numbers-vol-3">Job Type - Numbers Vol​.​3</a>
           </h1>
-          <h1>baccy beard - nearest@exomoon
+          <h1><a href="https://soundcloud.com/slumpsounds/baccy-beard-nearestexomoon">baccy beard - nearest@exomoon</a>
           </h1>
-          <h1>SolidMixtape1
-            by Lydios Materials Inc.</h1>
-          <h1>SLUMP SOUNDS // LATITUDE FESTIVAL</h1>
-          <h1>Instagram</h1>
-          <h1>Facebook</h1>
+          <h1><a href="https://slumpsounds.bandcamp.com/album/solidmixtape1">SolidMixtape1 by Lydios Materials Inc.</a></h1>
+          <h1><a href="https://youtu.be/zxBWis3Jixw">SLUMP SOUNDS // LATITUDE FESTIVAL</a></h1>
+          <h1><a href="https://www.instagram.com/slumpsoundslds/?hl=en">Instagram</a></h1>
+          <h1><a href="https://www.facebook.com/slumpsounds">Facebook</a></h1>
           
         </div>
         <div className="LT">

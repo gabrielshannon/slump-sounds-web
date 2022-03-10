@@ -155,6 +155,25 @@ const PlayerApp = () => {
           audio:
             "https://slmpbackend8080.online/wp-content/uploads/2021/11/Job-Type-Summer-Slam-tape-1.mp3",
         },
+
+        {
+          item:
+            "SLUMP SOUNDS PRESENTS... DOWN2EARTH 01_08_2019 // Kmah Radio",
+
+          data: null,
+          audio:
+            "https://slmpbackend8080.online/wp-content/uploads/2022/03/Slump-Sounds-Presents...-DOWN2EARTH-Kmah-Radio-01_08_2019-1.mp3",
+        },
+
+        {
+          item:
+            "BACCY-BEARD-MINIMIX-2018",
+
+          data: null,
+          audio:
+            "https://slmpbackend8080.online/wp-content/uploads/2022/03/BACCY-BEARD-MINIMIX-2018.mp3",
+        },
+
       ],
     },
 

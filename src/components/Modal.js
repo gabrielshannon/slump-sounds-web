@@ -131,7 +131,7 @@ export default function Modal({ open, onClose, children, myActiveSet }) {
                       width="50px"
                       src={logoOverlay3}
                     />
-                     0113/SE 🛒 / <a href="https://slumpsounds.bandcamp.com/">https://linktr.ee/slumpsounds</a> 
+                     0113/SE 🛒 / 
                     </div>
              
             
