@@ -29,8 +29,9 @@ html body {
 
 /* BROWSER */
 
-.hello-full-page.h1{
+.hello-full-page a:link{
   color: #ffffff;
+  text-decoration: none;
 }
 
 body,
