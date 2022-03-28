@@ -5,6 +5,21 @@ body {
   overflow: hidden
 }
 
+@font-face {
+  font-family: "Grotesk-Remix-reg";
+  src: url("fonts/39DD9F_0_0.woff") format("woff");
+  src: url("fonts/39DD9F_0_0.ttf") format("truetype"),
+    url("fonts/39DD9F_0_0.woff") format("woff"),
+    url("fonts/39DD9F_0_0.woff2") format("eot"),
+    url("fonts/39DD9F_0_0.ttf") format("eot");
+  font-style: normal;
+}
+
+.textfont {
+  font-family: "Grotesk-Remix-reg", sans-serif;
+font-weight: bold;
+}
+
 p {
 
   /* color: blue; */

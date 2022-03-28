@@ -43,6 +43,12 @@ const PlayerApp = () => {
       id: "Radio:",
       items: [
         {
+          item: "SLUMP SOUNDS 01.02.22 // KINDRED RADIO",
+          data: "https://www.youtube.com/embed/dGJZMzn8Lvs?autoplay=0",
+          audio: 0,
+        },
+
+        {
           item: "SLUMP SOUNDS 23.11.21 // KINDRED RADIO",
           data: "https://www.youtube.com/embed/Sei7gYCnHEQ?autoplay=0",
           audio: 0,

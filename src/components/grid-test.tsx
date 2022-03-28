@@ -74,7 +74,7 @@ export function Grid() {
 
         <div className="footer">
           <img className="logo" src={logo} width="110px" />
-          slump sounds 2021 : all rights reserved
+          slump sounds 2022 : all rights reserved
         </div>
       </div>
     </div>
