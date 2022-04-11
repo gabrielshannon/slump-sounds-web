@@ -17,8 +17,8 @@ export function Grid() {
     <div style={{}}>
       <div className="container">
         <div className="hello-full-page">
-          <a href="https://open.spotify.com/track/4qBxaPykn8KOV9HcWp6Ssv?si=c510e919000b4384"><h1>PREMIERE: baccy beard - 4head [Slump Sounds]</h1></a>
-          <a href="https://slumpsounds.bandcamp.com/"><h1>4head</h1></a>
+          <a href="https://slumpsounds.bandcamp.com/"><h1>Bandcamp</h1></a>
+          <a href="https://open.spotify.com/track/4qBxaPykn8KOV9HcWp6Ssv?si=c510e919000b4384"><h1>Spotify</h1></a>
           <a href="https://slumpsounds.bandcamp.com/track/job-type-numbers-vol-3"><h1>Job Type - Numbers Vol​.​3</h1></a>
           <a href="https://soundcloud.com/slumpsounds/baccy-beard-nearestexomoon"><h1>baccy beard - nearest@exomoon</h1></a>
           <a href="https://slumpsounds.bandcamp.com/album/solidmixtape1"> <h1>SolidMixtape1 by Lydios Materials Inc.</h1></a>
