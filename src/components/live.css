@@ -43,9 +43,10 @@
   flex-direction: column;
   /* border-radius: 15px; */
   padding: 5px;
-  background-color: rgba(250, 250, 250, 0.8);
+  background-color: rgb(0 0 0 / 80%);
   -webkit-box-shadow: 1px 1px 15px 5px rgba(0, 245, 255, 0.4);
   box-shadow: 1px 1px 15px 5px rgba(0, 245, 255, 0.4);
+  color: white;
 }
 
 .clock-band-mins {
@@ -67,22 +68,13 @@
   align-items: center;
 }
 
-.videos {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 25px;
-  padding: 25px;
-}
-
 .vid {
-  border-radius: 15px;
   border-style: none;
   /* -webkit-box-shadow: 1px 1px 15px 5px rgba(0, 245, 255, 0.4);
   box-shadow: 1px 1px 15px 5px rgba(0, 245, 255, 0.4); */
   background: #ecefcf;
-  width: 600px;
-  height: 400px;
+  width: 100%;
+  height: 100%;
 }
 
 .video-container {
@@ -118,11 +110,17 @@
 
 .midBar {
   position: absolute;
+  display: grid;
+  width: 100%;
   z-index: 999999999;
   bottom: 0;
-  top: 50%; /* position the top  edge of the element at the middle of the parent */
-  left: 50%; /* position the left edge of the element at the middle of the parent */
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  height: 100%;
+  grid-template-columns: 1fr 1fr;
+  z-index: -1;
 }
 
 .footer2 {
@@ -132,7 +130,6 @@
   align-items: center;
   color: #ffffff;
   grid-area: footer;
-  margin: 12px;
   font-family: Arial, Helvetica, sans-serif;
   font-style: normal;
   font-size: 12px;
@@ -141,6 +138,7 @@
   bottom: 0;
   top: 94%; /* position the top  edge of the element at the middle of the parent */
   left: 50%; /* position the left edge of the element at the middle of the parent */
+  background-color: black;
   transform: translate(
     -50%,
     -50%
@@ -151,11 +149,6 @@
 .youtubePlayer {
   border-radius: 25px;
   overflow: hidden;
-}
-
-.mediaWindow {
-  width: 850px;
-  height: 454px;
 }
 
 .videoBar {
@@ -306,31 +299,15 @@
   z-index: -1;
 }
 
-.footer {
-  /* background-color: rgb(100, 247, 64); */
-  position: fixed;
-  bottom: 5px;
-  left: 42%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: #fffffff;
-  grid-area: footer;
-  margin: 12px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: normal;
-  font-size: 12px;
-}
-
 .logo-kindred {
+  padding-top: 3px;
   z-index: 99999;
 }
 
 .kindred-now {
   display: flex;
-  justify-content: flex-start;
-  align-items: start;
+  justify-content: center;
+  align-items: center;
   background-color: rgb(245, 245, 245);
   -webkit-border-top-left-radius: 10px;
   -webkit-border-top-right-radius: 10px;
@@ -353,8 +330,8 @@
   position: fixed;
   display: flex;
   flex-direction: column;
-  right: 10px;
-  top: 10px;
+  right: 15px;
+  top: 15px;
 
   z-index: 99999;
 }

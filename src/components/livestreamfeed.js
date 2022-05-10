@@ -140,16 +140,25 @@ function Livestream() {
             </div>
           </div>
         </div>
-        2
+
         <div className="midBar">
-          <div className="videos">
-            <div className="vid-container-live">
-              <iframe
-                className="vid"
-                src="https://www.youtube.com/embed/zcHc0d6Faa8? &autoplay=1&mute=1"
-              ></iframe>
-            </div>
-          </div>
+          <iframe
+            className="vid"
+            src="https://www.youtube.com/embed/lD8k6Ho1Be0? &autoplay=1&mute=1"
+          ></iframe>
+          <iframe
+            className="vid"
+            src="https://www.youtube.com/embed/lD8k6Ho1Be0? &autoplay=1&mute=1"
+          ></iframe>
+          <iframe
+            className="vid"
+            src="https://www.youtube.com/embed/lD8k6Ho1Be0? &autoplay=1&mute=1"
+          ></iframe>
+
+          <iframe
+            className="vid"
+            src="https://www.youtube.com/embed/lD8k6Ho1Be0? &autoplay=1&mute=1"
+          ></iframe>
         </div>
         <div className="timeline-bits">
           <div
@@ -159,7 +168,7 @@ function Livestream() {
               borderStyle: "solid",
               borderColor: "rgba(0,0,0,0.5)",
               borderWidth: "1px",
-              backgroundColor: "rgba(0, 245, 255, 1)",
+              backgroundColor: "rgb(237, 255, 0)",
             }}
           />
           <div class="clock-band-mins">
@@ -170,12 +179,12 @@ function Livestream() {
           <img className="footer-logo" src={logo} width="110px" />
           slump sounds 2022 : all rights reserved
         </div>
-        <div className="vid-container">
+        {/* <div className="vid-container">
           <iframe
             className="background-vid"
             src="https://www.youtube.com/embed/cyzgJBEnLNE? &autoplay=1&mute=1"
           ></iframe>
-        </div>
+        </div> */}
       </div>
     </>
   )
