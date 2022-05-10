@@ -159,6 +159,7 @@ function Livestream() {
             className="vid"
             src="https://www.youtube.com/embed/lD8k6Ho1Be0? &autoplay=1&mute=1"
           ></iframe>
+          <div></div>
         </div>
         <div className="timeline-bits">
           <div
