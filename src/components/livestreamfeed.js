@@ -159,7 +159,6 @@ function Livestream() {
             className="vid"
             src="https://www.youtube.com/embed/lD8k6Ho1Be0? &autoplay=1&mute=1"
           ></iframe>
-          <div></div>
         </div>
         <div className="timeline-bits">
           <div
@@ -167,7 +166,7 @@ function Livestream() {
             style={{
               width: (nsec / 60) * 100 + "%",
               borderStyle: "solid",
-              borderColor: "rgba(0,0,0,0.5)",
+              borderColor: "rgba(0,0,0,0.6)",
               borderWidth: "1px",
               backgroundColor: "rgb(237, 255, 0)",
             }}
