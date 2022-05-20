@@ -7,8 +7,6 @@
 ::-webkit-scrollbar-track {
   /* background: rgba(255, 255, 255, 1); */
   background-color: rgb(182, 182, 182, 0.3);
-
-  
 }
 
 /* Handle */
@@ -31,14 +29,12 @@
   font-style: normal;
 }
 
-
 @media (min-width: 650px) {
   .mediaWindow {
     width: 350px;
     height: 309px;
   }
 }
-
 
 .content {
   /* grid-area: content; */
@@ -49,7 +45,6 @@
 
 .content-title {
   border: 1px solid #cfcfcf;
-
 }
 
 .content-list {
@@ -63,11 +58,11 @@
 
 .content-player {
   border: 1px solid #cfcfcf;
-  margin-top: 5px;
+  /* margin-top: 5px;
   grid-column: 1 / -1;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
 }
 
 /* Style the accordion section */
