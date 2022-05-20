@@ -1,5 +1,5 @@
 // import * as React from "react"
-import "./live.css"
+// import "./live.css"
 import React, { useEffect, useState } from "react"
 import logo from "./images/myasset.svg"
 import topLogo from "./images/gifkindred2.gif"
