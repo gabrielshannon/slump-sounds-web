@@ -58,11 +58,11 @@
 
 .content-player {
   border: 1px solid #cfcfcf;
-  /* margin-top: 5px;
+  margin-top: 5px;
   grid-column: 1 / -1;
   display: flex;
   justify-content: center;
-  align-items: center; */
+  align-items: center;
 }
 
 /* Style the accordion section */
